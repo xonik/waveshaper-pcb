@@ -7601,7 +7601,7 @@ high speed (Philips)</description>
 <part name="C4" library="resistor" deviceset="C-EU" device="C0805" value="?pF"/>
 <part name="C5" library="resistor" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="C6" library="resistor" deviceset="C-EU" device="C0805" value="100nF"/>
-<part name="C7" library="resistor" deviceset="C-EU" device="C0805" value="10pF"/>
+<part name="C7" library="resistor" deviceset="C-EU" device="C0805" value="5pF"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="55" library="resistor" deviceset="R-EU_" device="R0805" value="20k"/>
 <part name="56" library="resistor" deviceset="R-EU_" device="R0805" value="100k"/>

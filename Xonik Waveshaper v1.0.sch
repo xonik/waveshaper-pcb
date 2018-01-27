@@ -7601,7 +7601,7 @@ high speed (Philips)</description>
 <part name="C4" library="resistor" deviceset="C-EU" device="C0805" value="?pF"/>
 <part name="C5" library="resistor" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="C6" library="resistor" deviceset="C-EU" device="C0805" value="100nF"/>
-<part name="C7" library="resistor" deviceset="C-EU" device="C0805" value="10pF"/>
+<part name="C7" library="resistor" deviceset="C-EU" device="C0805" value="5pF"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="55" library="resistor" deviceset="R-EU_" device="R0805" value="20k"/>
 <part name="56" library="resistor" deviceset="R-EU_" device="R0805" value="100k"/>
@@ -7678,6 +7678,8 @@ high speed (Philips)</description>
 <text x="48.26" y="-73.66" size="1.778" layer="91">30pF for filtering saw wave cuts off about
 half the spike, but also rounds off the
 rest. Not sure if it is worth doing.</text>
+<text x="38.1" y="-2.54" size="1.778" layer="91">Caps may not be needed, try without first</text>
+<text x="-7.62" y="-63.5" size="1.778" layer="91">Caps may not be needed, try without first</text>
 </plain>
 <instances>
 <instance part="IC1" gate="C" x="22.86" y="48.26" smashed="yes" rot="MR180">
