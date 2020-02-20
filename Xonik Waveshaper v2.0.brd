@@ -14,7 +14,7 @@
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -92,7 +92,6 @@
 <circle x="36.449" y="15.4305" radius="0.0635" width="0.4064" layer="25"/>
 <circle x="46.609" y="15.4305" radius="0.0635" width="0.4064" layer="25"/>
 <circle x="54.483" y="15.4305" radius="0.0635" width="0.4064" layer="25"/>
-<text x="2.2225" y="5.3975" size="1.016" layer="26" rot="MR90">GND</text>
 <text x="4.7625" y="5.3975" size="1.016" layer="26" rot="MR90">Center</text>
 <text x="7.3025" y="5.3975" size="1.016" layer="26" rot="MR90">DCO in</text>
 <text x="12.3825" y="5.3975" size="1.016" layer="26" rot="MR90">PW CV</text>
@@ -115,10 +114,10 @@ match</text>
 <wire x1="29.5275" y1="10.4775" x2="49.2125" y2="10.4775" width="0.1016" layer="26"/>
 <text x="50.4825" y="5.3975" size="1.016" layer="26" rot="MR90">+15V</text>
 <text x="53.0225" y="5.3975" size="1.016" layer="26" rot="MR90">-15V</text>
-<text x="55.5625" y="5.3975" size="1.016" layer="26" rot="MR90">GND</text>
+<text x="55.5625" y="5.3975" size="1.016" layer="26" rot="MR90">AGND</text>
 <text x="58.1025" y="5.3975" size="1.016" layer="26" rot="MR90">Timer in</text>
 <text x="60.325" y="5.3975" size="1.016" layer="26" rot="MR90">+5V</text>
-<text x="8.128" y="4.2545" size="1.4224" layer="25">v2.0 - 4VOB</text>
+<text x="0.8255" y="20.7645" size="1.4224" layer="25" font="vector">v2.0</text>
 <text x="7.5565" y="26.543" size="1.016" layer="25" rot="R90">1</text>
 <text x="5.0165" y="26.543" size="1.016" layer="25" rot="R90">2</text>
 <text x="3.1115" y="26.543" size="1.016" layer="25" rot="R90">3</text>
@@ -1281,6 +1280,7 @@ match</text>
 <vertex x="47.267775" y="23.88909375"/>
 </polygon>
 <text x="61.722" y="25.527" size="1.778" layer="26" font="vector" rot="MR0">Waveshaper</text>
+<text x="13.208" y="4.572" size="1.4224" layer="25" font="vector">4VOB</text>
 </plain>
 <libraries>
 <library name="linear">
