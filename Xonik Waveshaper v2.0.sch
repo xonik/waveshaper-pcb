@@ -7674,6 +7674,13 @@ high speed (Philips)</description>
 <text x="48.26" y="-73.66" size="1.778" layer="91">30pF for filtering saw wave cuts off about
 half the spike, but also rounds off the
 rest. Not sure if it is worth doing.</text>
+<text x="124.46" y="-10.16" size="1.778" layer="97">Max power:
+1.5k/15k amp config:
+Clips long before input reaches +/-15V,
+max current when feeding into a 10k resistor is
+800uA = 640uW. 
+
+ok with 1/10w resistors</text>
 </plain>
 <instances>
 <instance part="IC1" gate="C" x="22.86" y="48.26" smashed="yes" rot="MR180">

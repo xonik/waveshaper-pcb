@@ -150,13 +150,13 @@ match</text>
 <text x="49.4665" y="26.543" size="1.016" layer="25" rot="R90">36</text>
 <text x="46.9265" y="26.543" size="1.016" layer="25" rot="R90">37</text>
 <text x="44.3865" y="26.543" size="1.016" layer="25" rot="R90">38</text>
-<text x="29.4005" y="16.891" size="1.016" layer="25">39</text>
+<text x="29.718" y="16.891" size="1.016" layer="25">39</text>
 <text x="41.8465" y="26.543" size="1.016" layer="25" rot="R90">40</text>
-<text x="33.9725" y="16.891" size="1.016" layer="25">41</text>
+<text x="34.29" y="16.891" size="1.016" layer="25">41</text>
 <text x="33.9725" y="14.732" size="1.016" layer="25">44</text>
 <text x="35.3695" y="7.112" size="1.016" layer="25" rot="R270">45</text>
 <text x="37.9095" y="7.112" size="1.016" layer="25" rot="R270">46</text>
-<text x="29.4005" y="14.732" size="1.016" layer="25">47</text>
+<text x="29.718" y="14.732" size="1.016" layer="25">47</text>
 <text x="45.5295" y="7.112" size="1.016" layer="25" rot="R270">48</text>
 <text x="40.4495" y="7.112" size="1.016" layer="25" rot="R270">49</text>
 <text x="42.9895" y="7.112" size="1.016" layer="25" rot="R270">50</text>
@@ -164,8 +164,8 @@ match</text>
 <text x="26.7335" y="7.112" size="1.016" layer="25" rot="R270">56</text>
 <text x="48.0695" y="7.239" size="1.016" layer="25" rot="R270">C1</text>
 <text x="54.5465" y="26.416" size="1.016" layer="25" rot="R90">C2</text>
-<text x="31.496" y="16.891" size="1.016" layer="25">C3</text>
-<text x="31.496" y="14.732" size="1.016" layer="25">C4</text>
+<text x="31.8135" y="16.891" size="1.016" layer="25">C3</text>
+<text x="31.8135" y="14.732" size="1.016" layer="25">C4</text>
 <text x="62.1665" y="26.416" size="1.016" layer="25" rot="R90">C5</text>
 <text x="58.42" y="7.112" size="1.016" layer="25" rot="R270">C6</text>
 <text x="18.669" y="11.811" size="1.016" layer="25" rot="R90">C7</text>
