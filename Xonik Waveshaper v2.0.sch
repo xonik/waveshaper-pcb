@@ -7666,7 +7666,8 @@ high speed (Philips)</description>
 <text x="-7.62" y="116.84" size="1.778" layer="91">NB: 330k?</text>
 <text x="129.54" y="22.86" size="1.778" layer="97">All caps 100nF</text>
 <text x="-48.26" y="27.94" size="1.778" layer="97">Ext 100k pot to -15V</text>
-<text x="73.66" y="73.66" size="1.778" layer="97" rot="R180">Ext pot GND to +15V</text>
+<text x="53.34" y="68.58" size="1.778" layer="97">Ext 47k pot 
+GND to +15V</text>
 <text x="43.18" y="-22.86" size="1.778" layer="97" rot="R180">Ext 100k pot</text>
 <text x="43.18" y="-88.9" size="1.778" layer="97" rot="R180">Ext 100k pot</text>
 <text x="-154.94" y="0" size="6.4516" layer="91">Timer input = ok
