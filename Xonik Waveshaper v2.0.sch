@@ -7602,7 +7602,7 @@ high speed (Philips)</description>
 <part name="C4" library="resistor" deviceset="C-EU" device="C0805" value="?pF"/>
 <part name="C5" library="resistor" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="C6" library="resistor" deviceset="C-EU" device="C0805" value="100nF"/>
-<part name="C7" library="resistor" deviceset="C-EU" device="C0805" value="5pF"/>
+<part name="C7" library="resistor" deviceset="C-EU" device="C0805" value="6pF"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="55" library="resistor" deviceset="R-EU_" device="R0805" value="20k"/>
 <part name="56" library="resistor" deviceset="R-EU_" device="R0805" value="100k"/>
@@ -7682,6 +7682,8 @@ max current when feeding into a 10k resistor is
 800uA = 640uW. 
 
 ok with 1/10w resistors</text>
+<text x="76.2" y="114.3" size="2.54" layer="97">used to be 5pF but 5p
+is extended part, using 6p instead.</text>
 </plain>
 <instances>
 <instance part="IC1" gate="C" x="22.86" y="48.26" smashed="yes" rot="MR180">
@@ -8744,7 +8746,6 @@ ok with 1/10w resistors</text>
 <pinref part="46" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="-124.46" x2="50.8" y2="-114.3" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A" pin="-IN"/>
-<wire x1="50.8" y1="-114.3" x2="50.8" y2="-104.14" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="-104.14" x2="55.88" y2="-104.14" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="-104.14" x2="55.88" y2="-104.14" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="-104.14" x2="55.88" y2="-99.06" width="0.1524" layer="91"/>
