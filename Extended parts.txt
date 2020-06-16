@@ -8,5 +8,5 @@ Missing from bom
 TL074, IC1,2,3
 
 Wrong rotation:
-T1, is 180, should be 270
+T1, is 180, should be 90
 D1,2,3,4 swapped +/-

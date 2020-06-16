@@ -7687,8 +7687,6 @@ is extended part, using 6p instead.</text>
 <text x="-48.26" y="111.76" size="1.778" layer="97">PW is about 6% of the total cycle at the narrowest.
 
 Change R2 to 150 to reduce to half that.</text>
-<text x="-83.82" y="68.58" size="6.4516" layer="91">NB! SERIOUS
-ERROR HERE!</text>
 </plain>
 <instances>
 <instance part="IC1" gate="C" x="22.86" y="48.26" smashed="yes" rot="MR180">
@@ -7711,9 +7709,9 @@ ERROR HERE!</text>
 <attribute name="NAME" x="30.48" y="-80.645" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="25.4" y="-81.28" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="IC2" gate="B" x="-48.26" y="76.2" smashed="yes" rot="MR180">
-<attribute name="NAME" x="-50.8" y="85.725" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="-50.8" y="83.82" size="1.778" layer="96" rot="MR180"/>
+<instance part="IC2" gate="B" x="-50.8" y="78.74" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-53.34" y="73.025" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="-53.34" y="68.58" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="IC4" gate="B" x="22.86" y="-20.32" smashed="yes" rot="MR180">
 <attribute name="NAME" x="25.4" y="-13.335" size="1.778" layer="95" rot="MR180"/>
@@ -7981,19 +7979,19 @@ ERROR HERE!</text>
 <instance part="GND13" gate="1" x="55.88" y="-111.76" smashed="yes">
 <attribute name="VALUE" x="53.34" y="-114.3" size="1.778" layer="96"/>
 </instance>
-<instance part="55" gate="G$1" x="-60.96" y="83.82" smashed="yes" rot="R90">
-<attribute name="NAME" x="-62.4586" y="80.01" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-57.658" y="80.01" size="1.778" layer="96" rot="R90"/>
+<instance part="55" gate="G$1" x="-63.5" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="-64.9986" y="77.47" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-60.198" y="77.47" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="56" gate="G$1" x="-60.96" y="73.66" smashed="yes" rot="R90">
-<attribute name="NAME" x="-62.4586" y="69.85" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-57.658" y="69.85" size="1.778" layer="96" rot="R90"/>
+<instance part="56" gate="G$1" x="-63.5" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="-64.9986" y="67.31" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-60.198" y="67.31" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY2" gate="G$1" x="-60.96" y="66.04" smashed="yes">
-<attribute name="VALUE" x="-64.135" y="61.341" size="1.778" layer="96"/>
+<instance part="SUPPLY2" gate="G$1" x="-63.5" y="63.5" smashed="yes">
+<attribute name="VALUE" x="-66.675" y="58.801" size="1.778" layer="96"/>
 </instance>
-<instance part="GND14" gate="1" x="-71.12" y="86.36" smashed="yes">
-<attribute name="VALUE" x="-73.66" y="83.82" size="1.778" layer="96"/>
+<instance part="GND14" gate="1" x="-73.66" y="83.82" smashed="yes">
+<attribute name="VALUE" x="-76.2" y="81.28" size="1.778" layer="96"/>
 </instance>
 <instance part="IC5" gate="A" x="-35.56" y="-17.78" smashed="yes">
 <attribute name="NAME" x="-43.18" y="-6.985" size="1.778" layer="95"/>
@@ -8265,7 +8263,7 @@ ERROR HERE!</text>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
 <pinref part="55" gate="G$1" pin="2"/>
-<wire x1="-71.12" y1="88.9" x2="-60.96" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="86.36" x2="-63.5" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="A" pin="S"/>
@@ -8707,14 +8705,15 @@ ERROR HERE!</text>
 <label x="33.02" y="-114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="B" pin="+IN"/>
-<wire x1="-55.88" y1="73.66" x2="-55.88" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="B" pin="OUT"/>
-<wire x1="-55.88" y1="68.58" x2="-40.64" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="68.58" x2="-40.64" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="76.2" x2="-30.48" y2="76.2" width="0.1524" layer="91"/>
-<junction x="-40.64" y="76.2"/>
-<label x="-38.1" y="76.2" size="1.778" layer="95"/>
+<wire x1="-43.18" y1="78.74" x2="-40.64" y2="78.74" width="0.1524" layer="91"/>
+<label x="-40.64" y="76.2" size="1.778" layer="95"/>
+<pinref part="IC2" gate="B" pin="-IN"/>
+<wire x1="-40.64" y1="78.74" x2="-30.48" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="81.28" x2="-58.42" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="86.36" x2="-40.64" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="86.36" x2="-40.64" y2="78.74" width="0.1524" layer="91"/>
+<junction x="-40.64" y="78.74"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -8824,9 +8823,9 @@ ERROR HERE!</text>
 <segment>
 <pinref part="55" gate="G$1" pin="1"/>
 <pinref part="56" gate="G$1" pin="2"/>
-<pinref part="IC2" gate="B" pin="-IN"/>
-<wire x1="-55.88" y1="78.74" x2="-60.96" y2="78.74" width="0.1524" layer="91"/>
-<junction x="-60.96" y="78.74"/>
+<pinref part="IC2" gate="B" pin="+IN"/>
+<wire x1="-58.42" y1="76.2" x2="-63.5" y2="76.2" width="0.1524" layer="91"/>
+<junction x="-63.5" y="76.2"/>
 </segment>
 </net>
 <net name="N$31" class="0">
