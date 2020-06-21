@@ -1,1 +1,3 @@
-2.1: Fixed serious bug around -2.5v generator, had mixed up + and - inputs.
+2.1: 
+- Fixed serious bug around -2.5v generator, had mixed up + and - inputs.
+- Changed R19 from 1.5k to 1.2k. With 1.5k the sine output gain is 11 (1 + 15k/1.5k). On yusynth.net this shows a sine amplitude of +/-4V whereas all other waveforms are +/-5v. With 1.2k we get a gain of 13.5 which should give an amplitude closer to +/-5v. On my breadboard it exceeds this but the sine on the breadboard is also slightly higher than the one on the JLCPCB.  

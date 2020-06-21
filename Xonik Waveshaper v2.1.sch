@@ -7558,7 +7558,7 @@ high speed (Philips)</description>
 <part name="16" library="resistor" deviceset="R-EU_" device="R0805" value="150k"/>
 <part name="17" library="resistor" deviceset="R-EU_" device="R0805" value="200k"/>
 <part name="18" library="resistor" deviceset="R-EU_" device="R0805" value="150k"/>
-<part name="19" library="resistor" deviceset="R-EU_" device="R0805" value="1k5"/>
+<part name="19" library="resistor" deviceset="R-EU_" device="R0805" value="1k2"/>
 <part name="20" library="resistor" deviceset="R-EU_" device="R0805" value="15k"/>
 <part name="22" library="resistor" deviceset="R-EU_" device="R0805" value="22k"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
