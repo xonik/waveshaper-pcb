@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -55,29 +55,29 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="7" fill="1" visible="no" active="no"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="SERVICE" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="no"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
 <layer number="202" name="202bmp" color="3" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="7" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="7" fill="1" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -6987,12 +6987,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <packages>
 </packages>
 <symbols>
-<symbol name="-15V">
-<wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="94"/>
-<circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-3.175" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="-15V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 <symbol name="+05V">
 <wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
@@ -7000,45 +6994,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="+15V">
-<wire x1="0" y1="1.905" x2="0" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
-<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-2.54" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="+15V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
-<deviceset name="-15V" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="-15V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="+5V" prefix="SUPPLY">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="+5V" symbol="+05V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+15V" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="+15V" symbol="+15V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -7528,6 +7489,60 @@ high speed (Philips)</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply2" urn="urn:adsk.eagle:library:372">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+Please keep in mind, that these devices are necessary for the
+automatic wiring of the supply signals.&lt;p&gt;
+The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="-12V" urn="urn:adsk.eagle:symbol:26994/1" library_version="2">
+<wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="94"/>
+<circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-3.175" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="-12V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="+12V" urn="urn:adsk.eagle:symbol:26985/1" library_version="2">
+<wire x1="0" y1="1.905" x2="0" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+12V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="-12V" urn="urn:adsk.eagle:component:27041/1" prefix="SUPPLY" library_version="2">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="-12V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+12V" urn="urn:adsk.eagle:component:27033/1" prefix="SUPPLY" library_version="2">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="+12V" symbol="+12V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7604,9 +7619,8 @@ high speed (Philips)</description>
 <part name="C6" library="resistor" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="C7" library="resistor" deviceset="C-EU" device="C0805" value="6pF"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="55" library="resistor" deviceset="R-EU_" device="R0805" value="20k"/>
-<part name="56" library="resistor" deviceset="R-EU_" device="R0805" value="100k"/>
-<part name="SUPPLY2" library="supply2" deviceset="-15V" device=""/>
+<part name="55" library="resistor" deviceset="R-EU_" device="R0805" value="100k"/>
+<part name="56" library="resistor" deviceset="R-EU_" device="R0805" value="240k"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="IC5" library="joakim" deviceset="4013" device="D"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
@@ -7621,8 +7635,6 @@ high speed (Philips)</description>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
-<part name="SUPPLY4" library="supply2" deviceset="+15V" device=""/>
-<part name="SUPPLY5" library="supply2" deviceset="-15V" device=""/>
 <part name="D1" library="joakim" deviceset="1N4148" device="0805"/>
 <part name="D2" library="joakim" deviceset="1N4148" device="0805"/>
 <part name="D3" library="joakim" deviceset="1N4148" device="0805"/>
@@ -7630,8 +7642,6 @@ high speed (Philips)</description>
 <part name="C16" library="resistor" deviceset="C-EU" device="C0603K" value="100nF"/>
 <part name="C10" library="resistor" deviceset="C-EU" device="C0603K" value="100nF"/>
 <part name="C11" library="resistor" deviceset="C-EU" device="C0603K" value="100nF"/>
-<part name="SUPPLY6" library="supply2" deviceset="+15V" device=""/>
-<part name="SUPPLY7" library="supply2" deviceset="-15V" device=""/>
 <part name="C8" library="resistor" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="PULSE" library="joakim" deviceset="MA01-1J" device="P"/>
 <part name="SINE" library="joakim" deviceset="MA01-1J" device="P"/>
@@ -7645,9 +7655,9 @@ high speed (Philips)</description>
 <part name="PULSE_AMP_CV" library="joakim" deviceset="MA01-1J" device="P"/>
 <part name="PW_CV" library="joakim" deviceset="MA01-1J" device="P"/>
 <part name="DCO_IN" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="+15V" library="joakim" deviceset="MA01-1J" device="P"/>
+<part name="+12V" library="joakim" deviceset="MA01-1J" device="P"/>
 <part name="GND" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="-15V" library="joakim" deviceset="MA01-1J" device="P"/>
+<part name="-12V" library="joakim" deviceset="MA01-1J" device="P"/>
 <part name="+5V" library="joakim" deviceset="MA01-1J" device="P"/>
 <part name="DCO_TIMER" library="joakim" deviceset="MA01-1J" device="P"/>
 <part name="CENTER" library="joakim" deviceset="MA01-1J" device="P"/>
@@ -7659,15 +7669,22 @@ high speed (Philips)</description>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="GND27" library="joakim" deviceset="MA01-1J" device="P"/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-12V" device=""/>
+<part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-12V" device=""/>
+<part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-12V" device=""/>
+<part name="9" library="resistor" deviceset="R-EU_" device="R0805" value="50k"/>
+<part name="-2.5V" library="joakim" deviceset="MA01-1J" device="P"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="-7.62" y="116.84" size="1.778" layer="91">NB: 330k?</text>
 <text x="129.54" y="22.86" size="1.778" layer="97">All caps 100nF</text>
-<text x="-48.26" y="27.94" size="1.778" layer="97">Ext 100k pot to -15V</text>
+<text x="-48.26" y="27.94" size="1.778" layer="97">Ext 100k pot to -12V</text>
 <text x="53.34" y="68.58" size="1.778" layer="97">Ext 47k pot 
-GND to +15V</text>
+GND to +12V</text>
 <text x="43.18" y="-22.86" size="1.778" layer="97" rot="R180">Ext 100k pot</text>
 <text x="43.18" y="-88.9" size="1.778" layer="97" rot="R180">Ext 100k pot</text>
 <text x="-154.94" y="0" size="6.4516" layer="91">Timer input = ok
@@ -7684,9 +7701,19 @@ max current when feeding into a 10k resistor is
 ok with 1/10w resistors</text>
 <text x="76.2" y="114.3" size="2.54" layer="97">used to be 5pF but 5p
 is extended part, using 6p instead.</text>
-<text x="-48.26" y="111.76" size="1.778" layer="97">PW is about 6% of the total cycle at the narrowest.
+<text x="-55.88" y="116.84" size="1.778" layer="97">PW is about 6% of the total cycle at the narrowest.
 
 Change R2 to 150 to reduce to half that.</text>
+<text x="-157.48" y="58.42" size="5.08" layer="91">TODO:
+Remove divider before 
+pwm comparator op amp</text>
+<text x="-157.48" y="109.22" size="3.81" layer="91">TODO: 
+Fjerne resistor divider
+for å kunne bruke full CV</text>
+<text x="-233.68" y="-63.5" size="6.4516" layer="91">TODO: Hva skjer med amplitude her når
+Vcc for IC5 er 3v3, ikke 5?
+
+Burde vi ha dedikert clean 5V?</text>
 </plain>
 <instances>
 <instance part="IC1" gate="C" x="22.86" y="48.26" smashed="yes" rot="MR180">
@@ -7709,9 +7736,9 @@ Change R2 to 150 to reduce to half that.</text>
 <attribute name="NAME" x="30.48" y="-80.645" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="25.4" y="-81.28" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="IC2" gate="B" x="-50.8" y="78.74" smashed="yes" rot="MR180">
-<attribute name="NAME" x="-53.34" y="73.025" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="-53.34" y="68.58" size="1.778" layer="96" rot="MR180"/>
+<instance part="IC2" gate="B" x="-50.8" y="91.44" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-53.34" y="85.725" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="-53.34" y="81.28" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="IC4" gate="B" x="22.86" y="-20.32" smashed="yes" rot="MR180">
 <attribute name="NAME" x="25.4" y="-13.335" size="1.778" layer="95" rot="MR180"/>
@@ -7979,19 +8006,16 @@ Change R2 to 150 to reduce to half that.</text>
 <instance part="GND13" gate="1" x="55.88" y="-111.76" smashed="yes">
 <attribute name="VALUE" x="53.34" y="-114.3" size="1.778" layer="96"/>
 </instance>
-<instance part="55" gate="G$1" x="-63.5" y="81.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="-64.9986" y="77.47" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-60.198" y="77.47" size="1.778" layer="96" rot="R90"/>
+<instance part="55" gate="G$1" x="-50.8" y="101.6" smashed="yes">
+<attribute name="NAME" x="-54.61" y="103.0986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-54.61" y="98.298" size="1.778" layer="96"/>
 </instance>
-<instance part="56" gate="G$1" x="-63.5" y="71.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="-64.9986" y="67.31" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-60.198" y="67.31" size="1.778" layer="96" rot="R90"/>
+<instance part="56" gate="G$1" x="-66.04" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="-67.5386" y="80.01" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-62.738" y="80.01" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY2" gate="G$1" x="-63.5" y="63.5" smashed="yes">
-<attribute name="VALUE" x="-66.675" y="58.801" size="1.778" layer="96"/>
-</instance>
-<instance part="GND14" gate="1" x="-73.66" y="83.82" smashed="yes">
-<attribute name="VALUE" x="-76.2" y="81.28" size="1.778" layer="96"/>
+<instance part="GND14" gate="1" x="-58.42" y="73.66" smashed="yes">
+<attribute name="VALUE" x="-60.96" y="71.12" size="1.778" layer="96"/>
 </instance>
 <instance part="IC5" gate="A" x="-35.56" y="-17.78" smashed="yes">
 <attribute name="NAME" x="-43.18" y="-6.985" size="1.778" layer="95"/>
@@ -8045,12 +8069,6 @@ Change R2 to 150 to reduce to half that.</text>
 <instance part="GND24" gate="1" x="76.2" y="66.04" smashed="yes">
 <attribute name="VALUE" x="73.66" y="63.5" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY4" gate="+15V" x="124.46" y="83.82" smashed="yes">
-<attribute name="VALUE" x="121.92" y="86.995" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY5" gate="G$1" x="124.46" y="63.5" smashed="yes">
-<attribute name="VALUE" x="121.285" y="58.801" size="1.778" layer="96"/>
-</instance>
 <instance part="D1" gate="G$1" x="22.86" y="58.42" smashed="yes" rot="R180">
 <attribute name="NAME" x="20.32" y="57.9374" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -8071,12 +8089,6 @@ Change R2 to 150 to reduce to half that.</text>
 </instance>
 <instance part="C11" gate="G$1" x="149.86" y="43.18" smashed="yes" rot="R180">
 <attribute name="NAME" x="147.701" y="54.356" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="SUPPLY6" gate="+15V" x="154.94" y="50.8" smashed="yes">
-<attribute name="VALUE" x="152.4" y="53.975" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY7" gate="G$1" x="154.94" y="30.48" smashed="yes">
-<attribute name="VALUE" x="151.765" y="25.781" size="1.778" layer="96"/>
 </instance>
 <instance part="C8" gate="G$1" x="160.02" y="73.66" smashed="yes" rot="R180">
 <attribute name="NAME" x="157.861" y="72.136" size="1.778" layer="95" rot="R270"/>
@@ -8122,15 +8134,15 @@ Change R2 to 150 to reduce to half that.</text>
 <attribute name="VALUE" x="-36.83" y="99.06" size="1.778" layer="96"/>
 <attribute name="NAME" x="-36.83" y="107.442" size="1.778" layer="95"/>
 </instance>
-<instance part="PW_CV" gate="G$1" x="-35.56" y="91.44" smashed="yes">
-<attribute name="VALUE" x="-36.83" y="86.36" size="1.778" layer="96"/>
-<attribute name="NAME" x="-36.83" y="94.742" size="1.778" layer="95"/>
+<instance part="PW_CV" gate="G$1" x="-88.9" y="93.98" smashed="yes">
+<attribute name="VALUE" x="-90.17" y="88.9" size="1.778" layer="96"/>
+<attribute name="NAME" x="-90.17" y="97.282" size="1.778" layer="95"/>
 </instance>
 <instance part="DCO_IN" gate="G$1" x="-63.5" y="48.26" smashed="yes">
 <attribute name="VALUE" x="-64.77" y="43.18" size="1.778" layer="96"/>
 <attribute name="NAME" x="-64.77" y="51.562" size="1.778" layer="95"/>
 </instance>
-<instance part="+15V" gate="G$1" x="165.1" y="48.26" smashed="yes" rot="R180">
+<instance part="+12V" gate="G$1" x="165.1" y="48.26" smashed="yes" rot="R180">
 <attribute name="VALUE" x="166.37" y="53.34" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="166.37" y="44.958" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -8138,7 +8150,7 @@ Change R2 to 150 to reduce to half that.</text>
 <attribute name="VALUE" x="120.65" y="35.56" size="1.778" layer="96"/>
 <attribute name="NAME" x="120.65" y="43.942" size="1.778" layer="95"/>
 </instance>
-<instance part="-15V" gate="G$1" x="165.1" y="33.02" smashed="yes" rot="R180">
+<instance part="-12V" gate="G$1" x="165.1" y="33.02" smashed="yes" rot="R180">
 <attribute name="VALUE" x="166.37" y="38.1" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="166.37" y="29.718" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -8184,6 +8196,29 @@ Change R2 to 150 to reduce to half that.</text>
 </instance>
 <instance part="GND28" gate="1" x="129.54" y="30.48" smashed="yes">
 <attribute name="VALUE" x="127" y="27.94" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY1" gate="G$1" x="-66.04" y="76.2" smashed="yes">
+<attribute name="VALUE" x="-69.215" y="71.501" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY8" gate="G$1" x="132.08" y="63.5" smashed="yes">
+<attribute name="VALUE" x="128.905" y="58.801" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY9" gate="+12V" x="132.08" y="83.82" smashed="yes">
+<attribute name="VALUE" x="129.54" y="86.995" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY10" gate="+12V" x="134.62" y="50.8" smashed="yes">
+<attribute name="VALUE" x="132.08" y="53.975" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY11" gate="G$1" x="134.62" y="30.48" smashed="yes">
+<attribute name="VALUE" x="131.445" y="25.781" size="1.778" layer="96"/>
+</instance>
+<instance part="9" gate="G$1" x="-73.66" y="93.98" smashed="yes" rot="R180">
+<attribute name="NAME" x="-69.85" y="92.4814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-69.85" y="97.282" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="-2.5V" gate="G$1" x="-35.56" y="68.58" smashed="yes">
+<attribute name="VALUE" x="-36.83" y="63.5" size="1.778" layer="96"/>
+<attribute name="NAME" x="-36.83" y="71.882" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -8261,11 +8296,6 @@ Change R2 to 150 to reduce to half that.</text>
 <wire x1="55.88" y1="-109.22" x2="58.42" y2="-109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND14" gate="1" pin="GND"/>
-<pinref part="55" gate="G$1" pin="2"/>
-<wire x1="-73.66" y1="86.36" x2="-63.5" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="IC5" gate="A" pin="S"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="-50.8" y1="-10.16" x2="-48.26" y2="-10.16" width="0.1524" layer="91"/>
@@ -8330,12 +8360,10 @@ Change R2 to 150 to reduce to half that.</text>
 <pinref part="6" gate="G$1" pin="2"/>
 <pinref part="GND26" gate="1" pin="GND"/>
 </segment>
-</net>
-<net name="PW_CV" class="0">
 <segment>
-<pinref part="1" gate="G$1" pin="2"/>
-<wire x1="-5.08" y1="91.44" x2="-27.94" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="PW_CV" gate="G$1" pin="1"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="IC2" gate="B" pin="+IN"/>
+<wire x1="-58.42" y1="76.2" x2="-58.42" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -8705,15 +8733,8 @@ Change R2 to 150 to reduce to half that.</text>
 <label x="33.02" y="-114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="B" pin="OUT"/>
-<wire x1="-43.18" y1="78.74" x2="-40.64" y2="78.74" width="0.1524" layer="91"/>
-<label x="-40.64" y="76.2" size="1.778" layer="95"/>
-<pinref part="IC2" gate="B" pin="-IN"/>
-<wire x1="-40.64" y1="78.74" x2="-30.48" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="-58.42" y1="81.28" x2="-58.42" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-58.42" y1="86.36" x2="-40.64" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="86.36" x2="-40.64" y2="78.74" width="0.1524" layer="91"/>
-<junction x="-40.64" y="78.74"/>
+<pinref part="-2.5V" gate="G$1" pin="1"/>
+<wire x1="-12.7" y1="68.58" x2="-27.94" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -8780,52 +8801,6 @@ Change R2 to 150 to reduce to half that.</text>
 <wire x1="76.2" y1="-91.44" x2="76.2" y2="-99.06" width="0.1524" layer="91"/>
 <junction x="76.2" y="-99.06"/>
 <pinref part="SUB_SAW_2" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="-15V" class="0">
-<segment>
-<pinref part="56" gate="G$1" pin="1"/>
-<pinref part="SUPPLY2" gate="G$1" pin="-15V"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="P" pin="V-"/>
-<pinref part="SUPPLY5" gate="G$1" pin="-15V"/>
-<pinref part="IC2" gate="P" pin="V-"/>
-<wire x1="124.46" y1="66.04" x2="127" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="P" pin="V-"/>
-<wire x1="127" y1="66.04" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
-<junction x="129.54" y="66.04"/>
-<junction x="124.46" y="66.04"/>
-<pinref part="IC4" gate="P" pin="V-"/>
-<wire x1="129.54" y1="66.04" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
-<junction x="127" y="66.04"/>
-<junction x="132.08" y="66.04"/>
-</segment>
-<segment>
-<pinref part="SUPPLY7" gate="G$1" pin="-15V"/>
-<pinref part="-15V" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="33.02" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="33.02" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="33.02" x2="154.94" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="33.02" x2="154.94" y2="33.02" width="0.1524" layer="91"/>
-<junction x="154.94" y="33.02"/>
-<pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="40.64" x2="134.62" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="40.64" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
-<junction x="144.78" y="33.02"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="40.64" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
-<junction x="149.86" y="33.02"/>
-</segment>
-</net>
-<net name="N$33" class="0">
-<segment>
-<pinref part="55" gate="G$1" pin="1"/>
-<pinref part="56" gate="G$1" pin="2"/>
-<pinref part="IC2" gate="B" pin="+IN"/>
-<wire x1="-58.42" y1="76.2" x2="-63.5" y2="76.2" width="0.1524" layer="91"/>
-<junction x="-63.5" y="76.2"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -8950,34 +8925,33 @@ Change R2 to 150 to reduce to half that.</text>
 <junction x="101.6" y="58.42"/>
 </segment>
 </net>
-<net name="+15V" class="0">
+<net name="+12V" class="0">
 <segment>
 <pinref part="IC1" gate="P" pin="V+"/>
-<pinref part="SUPPLY4" gate="+15V" pin="+15V"/>
 <pinref part="IC3" gate="P" pin="V+"/>
 <pinref part="IC2" gate="P" pin="V+"/>
 <wire x1="129.54" y1="81.28" x2="127" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="127" y1="81.28" x2="124.46" y2="81.28" width="0.1524" layer="91"/>
-<junction x="124.46" y="81.28"/>
 <junction x="127" y="81.28"/>
 <junction x="129.54" y="81.28"/>
 <pinref part="IC4" gate="P" pin="V+"/>
 <wire x1="129.54" y1="81.28" x2="132.08" y2="81.28" width="0.1524" layer="91"/>
 <junction x="132.08" y="81.28"/>
+<pinref part="SUPPLY9" gate="+12V" pin="+12V"/>
+<label x="134.62" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
-<pinref part="SUPPLY6" gate="+15V" pin="+15V"/>
-<pinref part="+15V" gate="G$1" pin="1"/>
+<pinref part="+12V" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="48.26" x2="144.78" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="48.26" x2="149.86" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="48.26" x2="154.94" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="2"/>
 <junction x="149.86" y="48.26"/>
 <pinref part="C10" gate="G$1" pin="2"/>
 <junction x="144.78" y="48.26"/>
-<junction x="154.94" y="48.26"/>
+<pinref part="SUPPLY10" gate="+12V" pin="+12V"/>
+<junction x="134.62" y="48.26"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -8993,6 +8967,77 @@ Change R2 to 150 to reduce to half that.</text>
 <junction x="40.64" y="-38.1"/>
 <pinref part="ST2" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="-27.94" x2="40.64" y2="-38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="-12V" class="0">
+<segment>
+<pinref part="56" gate="G$1" pin="1"/>
+<pinref part="SUPPLY1" gate="G$1" pin="-12V"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="P" pin="V-"/>
+<pinref part="IC2" gate="P" pin="V-"/>
+<wire x1="124.46" y1="66.04" x2="127" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="P" pin="V-"/>
+<wire x1="127" y1="66.04" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
+<junction x="129.54" y="66.04"/>
+<pinref part="IC4" gate="P" pin="V-"/>
+<wire x1="129.54" y1="66.04" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
+<junction x="127" y="66.04"/>
+<junction x="132.08" y="66.04"/>
+<pinref part="SUPPLY8" gate="G$1" pin="-12V"/>
+</segment>
+<segment>
+<pinref part="-12V" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="33.02" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="33.02" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="33.02" x2="157.48" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="C16" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="40.64" x2="134.62" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="40.64" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
+<junction x="144.78" y="33.02"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="40.64" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
+<junction x="149.86" y="33.02"/>
+<pinref part="SUPPLY11" gate="G$1" pin="-12V"/>
+<junction x="134.62" y="33.02"/>
+<label x="139.7" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="9" gate="G$1" pin="1"/>
+<pinref part="IC2" gate="B" pin="-IN"/>
+<wire x1="-68.58" y1="93.98" x2="-66.04" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="56" gate="G$1" pin="2"/>
+<wire x1="-66.04" y1="93.98" x2="-60.96" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="93.98" x2="-58.42" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="88.9" x2="-66.04" y2="93.98" width="0.1524" layer="91"/>
+<junction x="-66.04" y="93.98"/>
+<wire x1="-60.96" y1="93.98" x2="-60.96" y2="101.6" width="0.1524" layer="91"/>
+<junction x="-60.96" y="93.98"/>
+<pinref part="55" gate="G$1" pin="1"/>
+<wire x1="-60.96" y1="101.6" x2="-55.88" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="55" gate="G$1" pin="2"/>
+<wire x1="-45.72" y1="101.6" x2="-40.64" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="101.6" x2="-40.64" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="B" pin="OUT"/>
+<wire x1="-40.64" y1="91.44" x2="-43.18" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="1" gate="G$1" pin="2"/>
+<wire x1="-40.64" y1="91.44" x2="-5.08" y2="91.44" width="0.1524" layer="91"/>
+<junction x="-40.64" y="91.44"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="PW_CV" gate="G$1" pin="1"/>
+<pinref part="9" gate="G$1" pin="2"/>
+<wire x1="-81.28" y1="93.98" x2="-78.74" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -9012,6 +9057,16 @@ Change R2 to 150 to reduce to half that.</text>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
