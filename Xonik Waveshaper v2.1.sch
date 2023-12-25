@@ -7556,8 +7556,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="IC1" library="linear" deviceset="TL074" device="D"/>
 <part name="IC2" library="linear" deviceset="TL074" device="D"/>
 <part name="IC3" library="linear" deviceset="TL074" device="D"/>
-<part name="1" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="2" library="resistor" deviceset="R-EU_" device="R0805" value="82k"/>
 <part name="3" library="resistor" deviceset="R-EU_" device="R0805" value="68k"/>
 <part name="4" library="resistor" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="5" library="resistor" deviceset="R-EU_" device="R0805" value="20k"/>
@@ -7576,7 +7574,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="19" library="resistor" deviceset="R-EU_" device="R0805" value="1k2"/>
 <part name="20" library="resistor" deviceset="R-EU_" device="R0805" value="15k"/>
 <part name="22" library="resistor" deviceset="R-EU_" device="R0805" value="22k"/>
-<part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="T1" library="transistor-neu-to92" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT3904LT1" value="2n3904"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -7613,15 +7610,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="resistor" deviceset="C-EU" device="C0805" value="10pF"/>
 <part name="C2" library="resistor" deviceset="C-EU" device="C0805" value="10pF"/>
-<part name="C3" library="resistor" deviceset="C-EU" device="C0805" value="?pF"/>
-<part name="C4" library="resistor" deviceset="C-EU" device="C0805" value="?pF"/>
+<part name="C3" library="resistor" deviceset="C-EU" device="C0805" value="30pF"/>
+<part name="C4" library="resistor" deviceset="C-EU" device="C0805" value="30pF"/>
 <part name="C5" library="resistor" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="C6" library="resistor" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="C7" library="resistor" deviceset="C-EU" device="C0805" value="6pF"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="55" library="resistor" deviceset="R-EU_" device="R0805" value="100k"/>
-<part name="56" library="resistor" deviceset="R-EU_" device="R0805" value="240k"/>
-<part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="IC5" library="joakim" deviceset="4013" device="D"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
@@ -7667,31 +7661,26 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="ST3" library="joakim" deviceset="MA01-1J" device="P"/>
 <part name="ST4" library="joakim" deviceset="MA01-1J" device="P"/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
-<part name="GND27" library="joakim" deviceset="MA01-1J" device="P"/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
-<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-12V" device=""/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-12V" device=""/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-12V" device=""/>
-<part name="9" library="resistor" deviceset="R-EU_" device="R0805" value="50k"/>
 <part name="-2.5V" library="joakim" deviceset="MA01-1J" device="P"/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-7.62" y="116.84" size="1.778" layer="91">NB: 330k?</text>
 <text x="129.54" y="22.86" size="1.778" layer="97">All caps 100nF</text>
 <text x="-48.26" y="27.94" size="1.778" layer="97">Ext 100k pot to -12V</text>
 <text x="53.34" y="68.58" size="1.778" layer="97">Ext 47k pot 
 GND to +12V</text>
 <text x="43.18" y="-22.86" size="1.778" layer="97" rot="R180">Ext 100k pot</text>
 <text x="43.18" y="-88.9" size="1.778" layer="97" rot="R180">Ext 100k pot</text>
-<text x="-154.94" y="0" size="6.4516" layer="91">Timer input = ok
-330k not needed.</text>
 <text x="48.26" y="-73.66" size="1.778" layer="91">30pF for filtering saw wave cuts off about
 half the spike, but also rounds off the
-rest. Not sure if it is worth doing.</text>
+rest. It has a cutoff frequency of 113kHz.</text>
 <text x="124.46" y="-10.16" size="1.778" layer="97">Max power:
 1.5k/15k amp config:
 Clips long before input reaches +/-15V,
@@ -7701,15 +7690,6 @@ max current when feeding into a 10k resistor is
 ok with 1/10w resistors</text>
 <text x="76.2" y="114.3" size="2.54" layer="97">used to be 5pF but 5p
 is extended part, using 6p instead.</text>
-<text x="-55.88" y="116.84" size="1.778" layer="97">PW is about 6% of the total cycle at the narrowest.
-
-Change R2 to 150 to reduce to half that.</text>
-<text x="-157.48" y="58.42" size="5.08" layer="91">TODO:
-Remove divider before 
-pwm comparator op amp</text>
-<text x="-157.48" y="109.22" size="3.81" layer="91">TODO: 
-Fjerne resistor divider
-for å kunne bruke full CV</text>
 <text x="-233.68" y="-63.5" size="6.4516" layer="91">TODO: Hva skjer med amplitude her når
 Vcc for IC5 er 3v3, ikke 5?
 
@@ -7735,10 +7715,6 @@ Burde vi ha dedikert clean 5V?</text>
 <instance part="IC4" gate="A" x="22.86" y="-86.36" smashed="yes" rot="MR180">
 <attribute name="NAME" x="30.48" y="-80.645" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="25.4" y="-81.28" size="1.778" layer="96" rot="MR180"/>
-</instance>
-<instance part="IC2" gate="B" x="-50.8" y="91.44" smashed="yes" rot="MR180">
-<attribute name="NAME" x="-53.34" y="85.725" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="-53.34" y="81.28" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="IC4" gate="B" x="22.86" y="-20.32" smashed="yes" rot="MR180">
 <attribute name="NAME" x="25.4" y="-13.335" size="1.778" layer="95" rot="MR180"/>
@@ -7767,14 +7743,6 @@ Burde vi ha dedikert clean 5V?</text>
 <instance part="IC1" gate="P" x="124.46" y="73.66" smashed="yes"/>
 <instance part="IC2" gate="P" x="127" y="73.66" smashed="yes"/>
 <instance part="IC3" gate="P" x="129.54" y="73.66" smashed="yes"/>
-<instance part="1" gate="G$1" x="-5.08" y="86.36" smashed="yes" rot="R90">
-<attribute name="NAME" x="-6.5786" y="82.55" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-1.778" y="82.55" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="2" gate="G$1" x="-5.08" y="76.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="-6.5786" y="72.39" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-1.778" y="72.39" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="3" gate="G$1" x="27.94" y="83.82" smashed="yes" rot="R180">
 <attribute name="NAME" x="31.75" y="82.3214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="31.75" y="87.122" size="1.778" layer="96" rot="R180"/>
@@ -7846,9 +7814,6 @@ Burde vi ha dedikert clean 5V?</text>
 <instance part="22" gate="G$1" x="76.2" y="50.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="77.6986" y="54.61" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="72.898" y="54.61" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="GND1" gate="1" x="-5.08" y="68.58" smashed="yes">
-<attribute name="VALUE" x="-7.62" y="66.04" size="1.778" layer="96"/>
 </instance>
 <instance part="T1" gate="G$1" x="35.56" y="83.82" smashed="yes">
 <attribute name="NAME" x="33.02" y="88.9" size="1.778" layer="95"/>
@@ -8006,17 +7971,6 @@ Burde vi ha dedikert clean 5V?</text>
 <instance part="GND13" gate="1" x="55.88" y="-111.76" smashed="yes">
 <attribute name="VALUE" x="53.34" y="-114.3" size="1.778" layer="96"/>
 </instance>
-<instance part="55" gate="G$1" x="-50.8" y="101.6" smashed="yes">
-<attribute name="NAME" x="-54.61" y="103.0986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-54.61" y="98.298" size="1.778" layer="96"/>
-</instance>
-<instance part="56" gate="G$1" x="-66.04" y="83.82" smashed="yes" rot="R90">
-<attribute name="NAME" x="-67.5386" y="80.01" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-62.738" y="80.01" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND14" gate="1" x="-58.42" y="73.66" smashed="yes">
-<attribute name="VALUE" x="-60.96" y="71.12" size="1.778" layer="96"/>
-</instance>
 <instance part="IC5" gate="A" x="-35.56" y="-17.78" smashed="yes">
 <attribute name="NAME" x="-43.18" y="-6.985" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-43.18" y="-27.94" size="1.778" layer="96"/>
@@ -8134,9 +8088,9 @@ Burde vi ha dedikert clean 5V?</text>
 <attribute name="VALUE" x="-36.83" y="99.06" size="1.778" layer="96"/>
 <attribute name="NAME" x="-36.83" y="107.442" size="1.778" layer="95"/>
 </instance>
-<instance part="PW_CV" gate="G$1" x="-88.9" y="93.98" smashed="yes">
-<attribute name="VALUE" x="-90.17" y="88.9" size="1.778" layer="96"/>
-<attribute name="NAME" x="-90.17" y="97.282" size="1.778" layer="95"/>
+<instance part="PW_CV" gate="G$1" x="-35.56" y="81.28" smashed="yes">
+<attribute name="VALUE" x="-36.83" y="76.2" size="1.778" layer="96"/>
+<attribute name="NAME" x="-36.83" y="84.582" size="1.778" layer="95"/>
 </instance>
 <instance part="DCO_IN" gate="G$1" x="-63.5" y="48.26" smashed="yes">
 <attribute name="VALUE" x="-64.77" y="43.18" size="1.778" layer="96"/>
@@ -8190,15 +8144,8 @@ Burde vi ha dedikert clean 5V?</text>
 <instance part="GND26" gate="1" x="60.96" y="91.44" smashed="yes">
 <attribute name="VALUE" x="58.42" y="88.9" size="1.778" layer="96"/>
 </instance>
-<instance part="GND27" gate="G$1" x="116.84" y="33.02" smashed="yes">
-<attribute name="VALUE" x="115.57" y="27.94" size="1.778" layer="96"/>
-<attribute name="NAME" x="115.57" y="36.322" size="1.778" layer="95"/>
-</instance>
 <instance part="GND28" gate="1" x="129.54" y="30.48" smashed="yes">
 <attribute name="VALUE" x="127" y="27.94" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY1" gate="G$1" x="-66.04" y="76.2" smashed="yes">
-<attribute name="VALUE" x="-69.215" y="71.501" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY8" gate="G$1" x="132.08" y="63.5" smashed="yes">
 <attribute name="VALUE" x="128.905" y="58.801" size="1.778" layer="96"/>
@@ -8212,32 +8159,22 @@ Burde vi ha dedikert clean 5V?</text>
 <instance part="SUPPLY11" gate="G$1" x="134.62" y="30.48" smashed="yes">
 <attribute name="VALUE" x="131.445" y="25.781" size="1.778" layer="96"/>
 </instance>
-<instance part="9" gate="G$1" x="-73.66" y="93.98" smashed="yes" rot="R180">
-<attribute name="NAME" x="-69.85" y="92.4814" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-69.85" y="97.282" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="-2.5V" gate="G$1" x="-35.56" y="68.58" smashed="yes">
 <attribute name="VALUE" x="-36.83" y="63.5" size="1.778" layer="96"/>
 <attribute name="NAME" x="-36.83" y="71.882" size="1.778" layer="95"/>
+</instance>
+<instance part="IC2" gate="B" x="-60.96" y="83.82" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-58.42" y="80.645" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="-58.42" y="88.9" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="GND1" gate="1" x="-71.12" y="76.2" smashed="yes">
+<attribute name="VALUE" x="-73.66" y="73.66" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<pinref part="2" gate="G$1" pin="2"/>
-<pinref part="1" gate="G$1" pin="1"/>
-<pinref part="IC1" gate="D" pin="+IN"/>
-<wire x1="-5.08" y1="81.28" x2="2.54" y2="81.28" width="0.1524" layer="91"/>
-<junction x="-5.08" y="81.28"/>
-</segment>
-</net>
 <net name="GND" class="0">
-<segment>
-<pinref part="2" gate="G$1" pin="1"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-</segment>
 <segment>
 <pinref part="T1" gate="G$1" pin="E"/>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -8361,9 +8298,10 @@ Burde vi ha dedikert clean 5V?</text>
 <pinref part="GND26" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="-71.12" y1="81.28" x2="-71.12" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="IC2" gate="B" pin="+IN"/>
-<wire x1="-58.42" y1="76.2" x2="-58.42" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="81.28" x2="-68.58" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -8735,6 +8673,7 @@ Burde vi ha dedikert clean 5V?</text>
 <segment>
 <pinref part="-2.5V" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="68.58" x2="-27.94" y2="68.58" width="0.1524" layer="91"/>
+<label x="-22.86" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -8876,7 +8815,7 @@ Burde vi ha dedikert clean 5V?</text>
 <junction x="160.02" y="81.28"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="TRIANGLE" class="0">
 <segment>
 <pinref part="IC2" gate="D" pin="OUT"/>
 <pinref part="17" gate="G$1" pin="1"/>
@@ -8887,6 +8826,7 @@ Burde vi ha dedikert clean 5V?</text>
 <wire x1="63.5" y1="38.1" x2="91.44" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="55.88" x2="63.5" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="TRIANGLE" gate="G$1" pin="1"/>
+<label x="76.2" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -8971,10 +8911,6 @@ Burde vi ha dedikert clean 5V?</text>
 </net>
 <net name="-12V" class="0">
 <segment>
-<pinref part="56" gate="G$1" pin="1"/>
-<pinref part="SUPPLY1" gate="G$1" pin="-12V"/>
-</segment>
-<segment>
 <pinref part="IC1" gate="P" pin="V-"/>
 <pinref part="IC2" gate="P" pin="V-"/>
 <wire x1="124.46" y1="66.04" x2="127" y2="66.04" width="0.1524" layer="91"/>
@@ -9005,52 +8941,27 @@ Burde vi ha dedikert clean 5V?</text>
 <label x="139.7" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="9" gate="G$1" pin="1"/>
-<pinref part="IC2" gate="B" pin="-IN"/>
-<wire x1="-68.58" y1="93.98" x2="-66.04" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="56" gate="G$1" pin="2"/>
-<wire x1="-66.04" y1="93.98" x2="-60.96" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="-60.96" y1="93.98" x2="-58.42" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="88.9" x2="-66.04" y2="93.98" width="0.1524" layer="91"/>
-<junction x="-66.04" y="93.98"/>
-<wire x1="-60.96" y1="93.98" x2="-60.96" y2="101.6" width="0.1524" layer="91"/>
-<junction x="-60.96" y="93.98"/>
-<pinref part="55" gate="G$1" pin="1"/>
-<wire x1="-60.96" y1="101.6" x2="-55.88" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="55" gate="G$1" pin="2"/>
-<wire x1="-45.72" y1="101.6" x2="-40.64" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="101.6" x2="-40.64" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="B" pin="OUT"/>
-<wire x1="-40.64" y1="91.44" x2="-43.18" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="1" gate="G$1" pin="2"/>
-<wire x1="-40.64" y1="91.44" x2="-5.08" y2="91.44" width="0.1524" layer="91"/>
-<junction x="-40.64" y="91.44"/>
-</segment>
-</net>
 <net name="N$33" class="0">
 <segment>
 <pinref part="PW_CV" gate="G$1" pin="1"/>
-<pinref part="9" gate="G$1" pin="2"/>
-<wire x1="-81.28" y1="93.98" x2="-78.74" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="81.28" x2="2.54" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="D" pin="+IN"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<wire x1="-71.12" y1="86.36" x2="-71.12" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="93.98" x2="-50.8" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="93.98" x2="-50.8" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="B" pin="OUT"/>
+<wire x1="-50.8" y1="83.82" x2="-53.34" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="B" pin="-IN"/>
+<wire x1="-71.12" y1="86.36" x2="-68.58" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="104,1,124.46,81.28,IC1P,V+,+15V,,,"/>
-<approved hash="104,1,124.46,66.04,IC1P,V-,-15V,,,"/>
-<approved hash="104,1,127,81.28,IC2P,V+,+15V,,,"/>
-<approved hash="104,1,127,66.04,IC2P,V-,-15V,,,"/>
-<approved hash="104,1,129.54,81.28,IC3P,V+,+15V,,,"/>
-<approved hash="104,1,129.54,66.04,IC3P,V-,-15V,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
