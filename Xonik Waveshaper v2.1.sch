@@ -7690,10 +7690,12 @@ max current when feeding into a 10k resistor is
 ok with 1/10w resistors</text>
 <text x="76.2" y="114.3" size="2.54" layer="97">used to be 5pF but 5p
 is extended part, using 6p instead.</text>
-<text x="-233.68" y="-63.5" size="6.4516" layer="91">TODO: Hva skjer med amplitude her når
-Vcc for IC5 er 3v3, ikke 5?
+<text x="-233.68" y="-63.5" size="6.4516" layer="91">TODO: 
+Hvis vi skal bruke 3v3 supply
+på flipflop'er så må vi bytte
+R26 og R27 med 6.6k
 
-Burde vi ha dedikert clean 5V?</text>
+Evt kan vi ha dedikert clean 5V?</text>
 </plain>
 <instances>
 <instance part="IC1" gate="C" x="22.86" y="48.26" smashed="yes" rot="MR180">
