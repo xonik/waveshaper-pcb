@@ -13182,10 +13182,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="D2" library="joakim" deviceset="1N4148" device="0805"/>
 <part name="D3" library="joakim" deviceset="1N4148" device="0805"/>
 <part name="D4" library="joakim" deviceset="1N4148" device="0805"/>
-<part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF"/>
-<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF"/>
-<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF"/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF"/>
+<part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF"/>
+<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF"/>
+<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF"/>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF"/>
 <part name="PULSE" library="joakim" deviceset="MA01-1J" device="P"/>
 <part name="SINE" library="joakim" deviceset="MA01-1J" device="P"/>
 <part name="TRIANGLE" library="joakim" deviceset="MA01-1J" device="P"/>
@@ -13223,6 +13223,9 @@ Source: AVX .. aphvc.pdf</description>
 <part name="31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="27k"/>
 <part name="21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="15k"/>
 <part name="32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33k"/>
+<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF"/>
+<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF"/>
+<part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -13733,6 +13736,15 @@ kan vi ha dedikert clean 5V?</text>
 <attribute name="NAME" x="11.43" y="-34.0614" size="1.778" layer="95"/>
 <attribute name="VALUE" x="11.43" y="-38.862" size="1.778" layer="96"/>
 </instance>
+<instance part="C9" gate="G$1" x="149.86" y="35.56" smashed="yes" rot="R180">
+<attribute name="NAME" x="147.701" y="46.736" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="C12" gate="G$1" x="144.78" y="35.56" smashed="yes" rot="R180">
+<attribute name="NAME" x="142.621" y="46.736" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="C13" gate="G$1" x="134.62" y="35.56" smashed="yes" rot="R180">
+<attribute name="NAME" x="132.461" y="46.736" size="1.778" layer="95" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -13847,6 +13859,19 @@ kan vi ha dedikert clean 5V?</text>
 <pinref part="GND" gate="G$1" pin="1"/>
 <pinref part="GND28" gate="1" pin="GND"/>
 <wire x1="129.54" y1="40.64" x2="129.54" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
+<junction x="129.54" y="40.64"/>
+<junction x="149.86" y="40.64"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<junction x="144.78" y="40.64"/>
+<wire x1="134.62" y1="40.64" x2="144.78" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="40.64" x2="149.86" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="C16" gate="G$1" pin="1"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<junction x="134.62" y="40.64"/>
 </segment>
 <segment>
 <pinref part="6" gate="G$1" pin="2"/>
@@ -14461,19 +14486,16 @@ kan vi ha dedikert clean 5V?</text>
 <segment>
 <pinref part="-12V" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="33.02" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="33.02" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="33.02" x2="157.48" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="40.64" x2="134.62" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="40.64" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
-<junction x="144.78" y="33.02"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="40.64" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
-<junction x="149.86" y="33.02"/>
 <pinref part="SUPPLY11" gate="G$1" pin="-12V"/>
-<junction x="134.62" y="33.02"/>
 <label x="139.7" y="30.48" size="1.778" layer="95"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<junction x="134.62" y="33.02"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="33.02" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
+<junction x="144.78" y="33.02"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="33.02" x2="157.48" y2="33.02" width="0.1524" layer="91"/>
+<junction x="149.86" y="33.02"/>
 </segment>
 </net>
 <net name="N$33" class="0">
