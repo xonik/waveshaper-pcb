@@ -2018,6 +2018,20 @@ chip</description>
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.35" x2="0.1999" y2="0.35" layer="35"/>
 </package>
+<package name="MA01N-1J">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<pad name="1" x="0" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<text x="-6.35" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-2.921" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+<package name="MA01NS-1J">
+<description>&lt;b&gt;PIN HEADER, 0.8mm drill&lt;/b&gt;</description>
+<pad name="1" x="0" y="0" drill="0.8" shape="octagon" rot="R90"/>
+<text x="-6.35" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-2.921" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="DIL08" urn="urn:adsk.eagle:package:16409/2" type="model">
@@ -2314,7 +2328,7 @@ high speed (Philips)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MA01-1J" prefix="SV" uservalue="yes">
+<deviceset name="MA01-1J" prefix="X" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="MA01-1J" x="0" y="0"/>
@@ -2329,6 +2343,22 @@ high speed (Philips)</description>
 </technologies>
 </device>
 <device name="P" package="SIP-PIN01-1J">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="N" package="MA01N-1J">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="N8MM" package="MA01NS-1J">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -10491,34 +10521,34 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF"/>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF"/>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0402" package3d_urn="urn:adsk.eagle:package:23626/2" value="1uF"/>
-<part name="PULSE" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="SINE" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="TRIANGLE" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="INV_SAW" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="SAW" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="SUB_SQR_1" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="SUB_SAW_1" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="SUB_SQR_2" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="SUB_SAW_2" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="PULSE_AMP_CV" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="PW_CV" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="DCO_IN" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="+12V" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="GND" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="-12V" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="IN_CENTER" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="SYMMETRY" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="ST1" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="ST2" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="ST3" library="joakim" deviceset="MA01-1J" device="P"/>
-<part name="ST4" library="joakim" deviceset="MA01-1J" device="P"/>
+<part name="PULSE" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="SINE" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="TRIANGLE" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="INV_SAW" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="SAW" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="SUB_SQR_1" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="SUB_SAW_1" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="SUB_SQR_2" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="SUB_SAW_2" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="PULSE_AMP_CV" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="PW_CV" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="DCO_IN" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="+12V" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="GND" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="-12V" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="IN_CENTER" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="SYMMETRY" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="ST1" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="ST2" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="ST3" library="joakim" deviceset="MA01-1J" device="N"/>
+<part name="ST4" library="joakim" deviceset="MA01-1J" device="N"/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-12V" device=""/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-12V" device=""/>
-<part name="-2.5V" library="joakim" deviceset="MA01-1J" device="P"/>
+<part name="-2.5V" library="joakim" deviceset="MA01-1J" device="N"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="30k"/>
 <part name="31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="27k"/>
