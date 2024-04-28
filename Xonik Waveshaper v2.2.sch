@@ -10604,6 +10604,8 @@ is extended part, using 6p instead.</text>
 switching noise on the analog 12V
 here? Not sure.</text>
 <text x="-154.94" y="-43.18" size="5.08" layer="91">TODO: Replace with TSSOP08</text>
+<text x="-48.26" y="91.44" size="1.778" layer="91">TODO: Use DCO in with a divider
+instead, to get a bipolar PWM?</text>
 </plain>
 <instances>
 <instance part="IC1" gate="C" x="22.86" y="48.26" smashed="yes">
