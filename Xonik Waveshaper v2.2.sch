@@ -7289,7 +7289,6 @@ ok with 1/10w resistors</text>
 <text x="149.86" y="86.36" size="1.778" layer="91">We MAY get some nasty
 switching noise on the analog 12V
 here? Not sure.</text>
-<text x="-154.94" y="-43.18" size="5.08" layer="91">TODO: Replace with TSSOP08</text>
 <text x="-55.88" y="45.72" size="1.778" layer="97">0-10V</text>
 <text x="-2.54" y="91.44" size="1.778" layer="97">0-5V</text>
 <text x="93.98" y="91.44" size="1.778" layer="97">-4.9 to 4.8V</text>
@@ -8001,6 +8000,10 @@ here? Not sure.</text>
 <pinref part="34" gate="G$1" pin="2"/>
 <pinref part="GND25" gate="1" pin="GND"/>
 </segment>
+<segment>
+<wire x1="-147.32" y1="-106.68" x2="-96.52" y2="-106.68" width="0.1524" layer="91"/>
+<label x="-144.78" y="-106.68" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -8037,6 +8040,10 @@ here? Not sure.</text>
 <junction x="20.32" y="96.52"/>
 <pinref part="PULSE_AMP_CV" gate="G$1" pin="1"/>
 <junction x="20.32" y="104.14"/>
+</segment>
+<segment>
+<wire x1="-147.32" y1="-58.42" x2="-96.52" y2="-58.42" width="0.1524" layer="91"/>
+<label x="-144.78" y="-58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -8083,6 +8090,10 @@ here? Not sure.</text>
 <label x="93.98" y="93.98" size="1.778" layer="95"/>
 <pinref part="IC1" gate="A" pin="OUT"/>
 </segment>
+<segment>
+<wire x1="-147.32" y1="-63.5" x2="-96.52" y2="-63.5" width="0.1524" layer="91"/>
+<label x="-144.78" y="-63.5" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="INV_SAW" class="0">
 <segment>
@@ -8105,6 +8116,10 @@ here? Not sure.</text>
 <label x="76.2" y="27.94" size="1.778" layer="95"/>
 <pinref part="IC1" gate="B" pin="OUT"/>
 <junction x="-7.62" y="45.72"/>
+</segment>
+<segment>
+<wire x1="-147.32" y1="-73.66" x2="-96.52" y2="-73.66" width="0.1524" layer="91"/>
+<label x="-144.78" y="-73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -8133,6 +8148,10 @@ here? Not sure.</text>
 <junction x="-45.72" y="48.26"/>
 <pinref part="36" gate="G$1" pin="1"/>
 <wire x1="-45.72" y1="86.36" x2="-10.16" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-147.32" y1="-66.04" x2="-96.52" y2="-66.04" width="0.1524" layer="91"/>
+<label x="-144.78" y="-66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -8217,6 +8236,10 @@ here? Not sure.</text>
 <pinref part="SUB_SQR_1" gate="G$1" pin="1"/>
 <label x="76.2" y="-20.32" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-147.32" y1="-99.06" x2="-96.52" y2="-99.06" width="0.1524" layer="91"/>
+<label x="-144.78" y="-99.06" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SUB_SQR_2" class="0">
 <segment>
@@ -8233,6 +8256,10 @@ here? Not sure.</text>
 <junction x="33.02" y="-88.9"/>
 <pinref part="SUB_SQR_2" gate="G$1" pin="1"/>
 <label x="78.74" y="-99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-147.32" y1="-101.6" x2="-96.52" y2="-101.6" width="0.1524" layer="91"/>
+<label x="-144.78" y="-101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -8324,6 +8351,10 @@ here? Not sure.</text>
 <pinref part="SUB_SAW_1" gate="G$1" pin="1"/>
 <label x="78.74" y="-48.26" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-147.32" y1="-86.36" x2="-96.52" y2="-86.36" width="0.1524" layer="91"/>
+<label x="-144.78" y="-86.36" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="-5V" class="0">
 <segment>
@@ -8351,6 +8382,10 @@ here? Not sure.</text>
 <wire x1="-12.7" y1="68.58" x2="-27.94" y2="68.58" width="0.1524" layer="91"/>
 <label x="-22.86" y="68.58" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-147.32" y1="-81.28" x2="-96.52" y2="-81.28" width="0.1524" layer="91"/>
+<label x="-144.78" y="-81.28" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SS2_TRIM_R" class="0">
 <segment>
@@ -8359,6 +8394,10 @@ here? Not sure.</text>
 <junction x="40.64" y="-121.92"/>
 <pinref part="ST4" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="-111.76" x2="40.64" y2="-121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-147.32" y1="-91.44" x2="-96.52" y2="-91.44" width="0.1524" layer="91"/>
+<label x="-144.78" y="-91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -8408,6 +8447,10 @@ here? Not sure.</text>
 <junction x="76.2" y="-116.84"/>
 <pinref part="SUB_SAW_2" gate="G$1" pin="1"/>
 <label x="78.74" y="-124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-147.32" y1="-83.82" x2="-96.52" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-144.78" y="-83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -8492,6 +8535,10 @@ here? Not sure.</text>
 <pinref part="TRIANGLE" gate="G$1" pin="1"/>
 <label x="76.2" y="35.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-147.32" y1="-71.12" x2="-96.52" y2="-71.12" width="0.1524" layer="91"/>
+<label x="-144.78" y="-71.12" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$39" class="0">
 <segment>
@@ -8528,6 +8575,10 @@ here? Not sure.</text>
 <pinref part="SINE" gate="G$1" pin="1"/>
 <junction x="101.6" y="58.42"/>
 <label x="99.06" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-147.32" y1="-78.74" x2="-96.52" y2="-78.74" width="0.1524" layer="91"/>
+<label x="-144.78" y="-78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -8578,11 +8629,19 @@ here? Not sure.</text>
 <pinref part="IC6" gate="A" pin="V+"/>
 <pinref part="SUPPLY2" gate="+12V" pin="+12V"/>
 </segment>
+<segment>
+<wire x1="-147.32" y1="-104.14" x2="-96.52" y2="-104.14" width="0.1524" layer="91"/>
+<label x="-144.78" y="-104.14" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SYMMETRY" class="0">
 <segment>
 <pinref part="16" gate="G$1" pin="2"/>
 <pinref part="SYMMETRY" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<wire x1="-147.32" y1="-68.58" x2="-96.52" y2="-68.58" width="0.1524" layer="91"/>
+<label x="-144.78" y="-68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SS1_TRIM_R" class="0">
@@ -8592,6 +8651,10 @@ here? Not sure.</text>
 <junction x="40.64" y="-45.72"/>
 <pinref part="ST2" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="-35.56" x2="40.64" y2="-45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-147.32" y1="-96.52" x2="-96.52" y2="-96.52" width="0.1524" layer="91"/>
+<label x="-144.78" y="-96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="-12V" class="0">
@@ -8632,6 +8695,10 @@ here? Not sure.</text>
 <pinref part="IC6" gate="A" pin="V-"/>
 <pinref part="SUPPLY3" gate="G$1" pin="-12V"/>
 </segment>
+<segment>
+<wire x1="-147.32" y1="-109.22" x2="-96.52" y2="-109.22" width="0.1524" layer="91"/>
+<label x="-144.78" y="-109.22" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PW_CV" class="0">
 <segment>
@@ -8640,6 +8707,10 @@ here? Not sure.</text>
 <wire x1="-12.7" y1="78.74" x2="-12.7" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="81.28" x2="2.54" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="D" pin="+IN"/>
+</segment>
+<segment>
+<wire x1="-147.32" y1="-60.96" x2="-96.52" y2="-60.96" width="0.1524" layer="91"/>
+<label x="-144.78" y="-60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -8681,12 +8752,20 @@ here? Not sure.</text>
 <pinref part="ST1" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="-35.56" x2="22.86" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="-147.32" y1="-93.98" x2="-96.52" y2="-93.98" width="0.1524" layer="91"/>
+<label x="-144.78" y="-93.98" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SS2_TRIM_L" class="0">
 <segment>
 <pinref part="ST3" gate="G$1" pin="1"/>
 <pinref part="48" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="-111.76" x2="20.32" y2="-111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-147.32" y1="-88.9" x2="-96.52" y2="-88.9" width="0.1524" layer="91"/>
+<label x="-144.78" y="-88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -8724,6 +8803,10 @@ here? Not sure.</text>
 <pinref part="SAW" gate="G$1" pin="1"/>
 <label x="83.82" y="12.7" size="1.778" layer="95"/>
 <pinref part="IC2" gate="B" pin="OUT"/>
+</segment>
+<segment>
+<wire x1="-147.32" y1="-76.2" x2="-96.52" y2="-76.2" width="0.1524" layer="91"/>
+<label x="-144.78" y="-76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$8" class="0">
