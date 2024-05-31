@@ -157,7 +157,7 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="supply1">
+<library name="supply1" urn="urn:adsk.eagle:library:371">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
  Please keep in mind, that these devices are necessary for the
@@ -168,14 +168,14 @@
 <packages>
 </packages>
 <symbols>
-<symbol name="GND">
+<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" prefix="GND">
+<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
@@ -190,11 +190,26 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="transistor-neu-to92">
+<library name="transistor-neu-to92" urn="urn:adsk.eagle:library:397">
 <description>&lt;b&gt;NPN Transistors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="TO3">
+<package name="SOT23-BEC" urn="urn:adsk.eagle:footprint:28685/1" library_version="6">
+<description>TO-236 ITT Intermetall</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.127" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.127" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.127" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.127" layer="51"/>
+<smd name="C" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="E" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="B" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+<package name="TO3" urn="urn:adsk.eagle:footprint:28652/1" library_version="6">
 <description>&lt;b&gt;TO-3&lt;/b&gt;</description>
 <wire x1="6.3754" y1="-10.9982" x2="17.3736" y2="-4.5212" width="0.1524" layer="21"/>
 <wire x1="5.969" y1="11.2014" x2="17.3736" y2="4.5212" width="0.1524" layer="21"/>
@@ -222,7 +237,7 @@
 <text x="-3.81" y="-6.223" size="1.27" layer="51" ratio="10" rot="R90">E</text>
 <text x="-3.81" y="4.572" size="1.27" layer="51" ratio="10" rot="R90">B</text>
 </package>
-<package name="TO18">
+<package name="TO18" urn="urn:adsk.eagle:footprint:28650/1" library_version="6">
 <description>&lt;b&gt;TO 18&lt;/b&gt;</description>
 <wire x1="0.9289" y1="2.227" x2="2.227" y2="0.9289" width="0.0508" layer="51" curve="-44.717164"/>
 <wire x1="0.9289" y1="-2.227" x2="2.227" y2="-0.9289" width="0.0508" layer="51" curve="44.717164"/>
@@ -243,7 +258,7 @@
 <text x="0.635" y="-1.27" size="1.27" layer="51" ratio="10">2</text>
 <text x="0" y="0.635" size="1.27" layer="51" ratio="10">3</text>
 </package>
-<package name="TO18-">
+<package name="TO18-" urn="urn:adsk.eagle:footprint:28667/1" library_version="6">
 <description>&lt;b&gt;TO-18&lt;/b&gt;</description>
 <wire x1="-2.2098" y1="-0.9692" x2="2.2098" y2="-0.9692" width="0.0508" layer="21" curve="132.636282"/>
 <wire x1="-0.9692" y1="2.2098" x2="0.9692" y2="2.2098" width="0.0508" layer="51" curve="-47.363718"/>
@@ -264,7 +279,7 @@
 <text x="-0.508" y="0.635" size="1.27" layer="51" ratio="10">2</text>
 <text x="-1.905" y="-1.27" size="1.27" layer="51" ratio="10">3</text>
 </package>
-<package name="TO202">
+<package name="TO202" urn="urn:adsk.eagle:footprint:28460/1" library_version="6">
 <description>&lt;b&gt;TO 202 horizontal&lt;/b&gt;</description>
 <wire x1="-5.207" y1="-1.27" x2="-5.207" y2="7.3406" width="0.127" layer="21"/>
 <wire x1="-3.5052" y1="7.3406" x2="-3.5052" y2="8.8138" width="0.127" layer="21"/>
@@ -309,7 +324,7 @@
 <rectangle x1="-2.921" y1="-5.08" x2="-2.159" y2="-3.429" layer="51"/>
 <hole x="0" y="17.78" drill="3.302"/>
 </package>
-<package name="TO202V">
+<package name="TO202V" urn="urn:adsk.eagle:footprint:28675/1" library_version="6">
 <description>&lt;b&gt;TO 202 vertical&lt;/b&gt;</description>
 <wire x1="-4.826" y1="-4.7498" x2="2.794" y2="-4.7498" width="0.127" layer="21"/>
 <wire x1="-4.826" y1="-0.127" x2="4.8006" y2="-0.127" width="0.127" layer="21"/>
@@ -333,7 +348,7 @@
 <rectangle x1="-0.889" y1="-2.794" x2="0.889" y2="-2.286" layer="51"/>
 <rectangle x1="1.651" y1="-2.794" x2="3.429" y2="-2.286" layer="51"/>
 </package>
-<package name="SOT93">
+<package name="SOT93" urn="urn:adsk.eagle:footprint:28665/1" library_version="6">
 <description>SOT-93&lt;p&gt;
 grid 5.45 mm</description>
 <wire x1="-7.62" y1="-6.35" x2="7.62" y2="-6.35" width="0.1524" layer="21"/>
@@ -380,7 +395,7 @@ grid 5.45 mm</description>
 <rectangle x1="4.826" y1="-10.287" x2="6.096" y2="-8.128" layer="51"/>
 <hole x="0" y="10.16" drill="4.1148"/>
 </package>
-<package name="SOT93V">
+<package name="SOT93V" urn="urn:adsk.eagle:footprint:28676/1" library_version="6">
 <description>SOT-93&lt;p&gt;
 grid 5.45 mm</description>
 <wire x1="7.62" y1="-2.032" x2="3.429" y2="-2.032" width="0.1524" layer="51"/>
@@ -401,7 +416,7 @@ grid 5.45 mm</description>
 <text x="-7.62" y="-6.858" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <rectangle x1="-7.62" y1="-2.032" x2="7.62" y2="0" layer="51"/>
 </package>
-<package name="TO126">
+<package name="TO126" urn="urn:adsk.eagle:footprint:28660/1" library_version="6">
 <description>&lt;b&gt;TO 126 horizontal&lt;/b&gt;</description>
 <wire x1="-3.937" y1="-1.27" x2="-3.937" y2="9.144" width="0.127" layer="21"/>
 <wire x1="-3.937" y1="9.144" x2="3.937" y2="9.144" width="0.127" layer="21"/>
@@ -437,7 +452,7 @@ grid 5.45 mm</description>
 <rectangle x1="1.905" y1="-5.207" x2="2.667" y2="-3.429" layer="51"/>
 <hole x="0" y="5.08" drill="3.302"/>
 </package>
-<package name="TO126V">
+<package name="TO126V" urn="urn:adsk.eagle:footprint:28677/1" library_version="6">
 <description>&lt;b&gt;TO 126 vertical&lt;/b&gt;</description>
 <wire x1="-3.937" y1="-0.127" x2="-3.937" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-3.937" y1="-1.27" x2="-3.683" y2="-2.794" width="0.127" layer="21"/>
@@ -467,7 +482,7 @@ grid 5.45 mm</description>
 <rectangle x1="-0.889" y1="-0.381" x2="0.889" y2="0" layer="51"/>
 <rectangle x1="1.397" y1="-0.381" x2="3.175" y2="0" layer="51"/>
 </package>
-<package name="TO218">
+<package name="TO218" urn="urn:adsk.eagle:footprint:28678/1" library_version="6">
 <description>&lt;b&gt;TO 218 horizontal&lt;/b&gt;</description>
 <wire x1="-7.62" y1="-6.35" x2="7.62" y2="-6.35" width="0.127" layer="21"/>
 <wire x1="7.62" y1="6.223" x2="7.62" y2="0" width="0.127" layer="21"/>
@@ -514,7 +529,7 @@ grid 5.45 mm</description>
 <rectangle x1="4.826" y1="-10.287" x2="6.096" y2="-8.128" layer="51"/>
 <hole x="0" y="10.16" drill="4.1148"/>
 </package>
-<package name="TO218V">
+<package name="TO218V" urn="urn:adsk.eagle:footprint:28456/1" library_version="6">
 <description>&lt;b&gt;TO 218 vertical&lt;/b&gt;</description>
 <wire x1="-6.985" y1="-5.08" x2="6.985" y2="-5.08" width="0.127" layer="21"/>
 <wire x1="6.985" y1="-5.08" x2="7.366" y2="-4.699" width="0.127" layer="21"/>
@@ -538,7 +553,7 @@ grid 5.45 mm</description>
 <rectangle x1="-7.239" y1="-2.032" x2="-3.556" y2="-1.143" layer="51"/>
 <rectangle x1="-1.905" y1="-2.032" x2="1.905" y2="-1.143" layer="51"/>
 </package>
-<package name="TO220">
+<package name="TO220" urn="urn:adsk.eagle:footprint:28453/1" library_version="6">
 <description>&lt;b&gt;TO 220 horizontal&lt;/b&gt;</description>
 <wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.127" layer="21"/>
@@ -579,7 +594,7 @@ grid 5.45 mm</description>
 <rectangle x1="2.159" y1="-6.604" x2="2.921" y2="-4.699" layer="51"/>
 <hole x="0" y="11.176" drill="3.302"/>
 </package>
-<package name="TO220V">
+<package name="TO220V" urn="urn:adsk.eagle:footprint:28680/1" library_version="6">
 <description>&lt;b&gt;TO 220 vertical&lt;/b&gt;</description>
 <wire x1="5.08" y1="-1.143" x2="4.953" y2="-4.064" width="0.127" layer="21"/>
 <wire x1="4.699" y1="-4.318" x2="4.953" y2="-4.064" width="0.127" layer="21"/>
@@ -601,7 +616,7 @@ grid 5.45 mm</description>
 <rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
 <rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
 </package>
-<package name="TO225AA">
+<package name="TO225AA" urn="urn:adsk.eagle:footprint:28668/1" library_version="6">
 <description>&lt;b&gt;TO-225&lt;/b&gt;&lt;p&gt;
 grid 2.54 mm, vertical</description>
 <wire x1="-3.4925" y1="-6.985" x2="-3.4925" y2="3.81" width="0.127" layer="21"/>
@@ -640,7 +655,7 @@ grid 2.54 mm, vertical</description>
 <rectangle x1="-0.3175" y1="-7.9375" x2="0.3175" y2="-6.985" layer="21"/>
 <hole x="0" y="0" drill="3.302"/>
 </package>
-<package name="TO39">
+<package name="TO39" urn="urn:adsk.eagle:footprint:28658/1" library_version="6">
 <description>&lt;b&gt;TO-39&lt;/b&gt;</description>
 <wire x1="-4.0386" y1="-3.5306" x2="-3.5052" y2="-2.9972" width="0.1524" layer="21"/>
 <wire x1="-2.9718" y1="-3.5306" x2="-3.5052" y2="-4.064" width="0.1524" layer="21"/>
@@ -653,7 +668,7 @@ grid 2.54 mm, vertical</description>
 <text x="-2.54" y="5.08" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.175" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="TO5">
+<package name="TO5" urn="urn:adsk.eagle:footprint:28657/1" library_version="6">
 <description>&lt;b&gt;TO 5&lt;/b&gt;</description>
 <wire x1="-4.0386" y1="-3.5306" x2="-3.5052" y2="-2.9972" width="0.127" layer="21"/>
 <wire x1="-2.9718" y1="-3.5306" x2="-3.5052" y2="-4.064" width="0.127" layer="21"/>
@@ -666,7 +681,7 @@ grid 2.54 mm, vertical</description>
 <text x="-2.54" y="5.08" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.175" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="TO66">
+<package name="TO66" urn="urn:adsk.eagle:footprint:28653/1" library_version="6">
 <description>&lt;b&gt;TO-66&lt;/b&gt;</description>
 <wire x1="-3.501" y1="-7.895" x2="3.5012" y2="-7.895" width="0.1524" layer="21" curve="47.833229"/>
 <wire x1="-3.501" y1="7.895" x2="3.5012" y2="7.895" width="0.1524" layer="21" curve="-47.833229"/>
@@ -690,7 +705,7 @@ grid 2.54 mm, vertical</description>
 <text x="-5.08" y="1.905" size="1.27" layer="21" ratio="10">2</text>
 <text x="-5.08" y="-3.175" size="1.27" layer="21" ratio="10">1</text>
 </package>
-<package name="TO92">
+<package name="TO92" urn="urn:adsk.eagle:footprint:28654/1" library_version="6">
 <description>&lt;b&gt;TO 92&lt;/b&gt;</description>
 <wire x1="-2.0946" y1="-1.651" x2="-2.6549" y2="-0.254" width="0.127" layer="21" curve="-32.78104"/>
 <wire x1="-2.6549" y1="-0.254" x2="-0.7863" y2="2.5485" width="0.127" layer="21" curve="-78.318477"/>
@@ -711,7 +726,7 @@ grid 2.54 mm, vertical</description>
 <text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
 <text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
 </package>
-<package name="TO92-EBC">
+<package name="TO92-EBC" urn="urn:adsk.eagle:footprint:28681/1" library_version="6">
 <description>&lt;b&gt;TO-92&lt;/b&gt; Pads In Line E B C from top&lt;p&gt;</description>
 <wire x1="-2.095" y1="-2.921" x2="2.095" y2="-2.921" width="0.127" layer="21"/>
 <wire x1="-2.413" y1="-0.1341" x2="2.413" y2="-0.1341" width="0.127" layer="21" curve="-129.583345"/>
@@ -732,7 +747,7 @@ grid 2.54 mm, vertical</description>
 <text x="-2.54" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.54" y="-4.572" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="TO92-E1">
+<package name="TO92-E1" urn="urn:adsk.eagle:footprint:28682/1" library_version="6">
 <description>&lt;b&gt;TO-92&lt;/b&gt; Pads Triangle Reverse</description>
 <wire x1="-2.095" y1="-1.651" x2="-0.7869" y2="2.5484" width="0.127" layer="21" curve="-111.097684"/>
 <wire x1="0.7869" y1="2.5484" x2="2.095" y2="-1.651" width="0.127" layer="21" curve="-111.097684"/>
@@ -749,7 +764,7 @@ grid 2.54 mm, vertical</description>
 <text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="TO92L">
+<package name="TO92L" urn="urn:adsk.eagle:footprint:28683/1" library_version="6">
 <description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
 grid 5.08 mm</description>
 <wire x1="-1.1359" y1="2.413" x2="-0.127" y2="2.664" width="0.1524" layer="51" curve="-22.478763"/>
@@ -771,7 +786,7 @@ grid 5.08 mm</description>
 <text x="-1.524" y="3.556" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.524" y="-4.953" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="TOP3">
+<package name="TOP3" urn="urn:adsk.eagle:footprint:28664/1" library_version="6">
 <description>&lt;b&gt;TOP 3 horizontal&lt;/b&gt;</description>
 <wire x1="-7.874" y1="-1.778" x2="7.874" y2="-1.778" width="0.127" layer="21"/>
 <wire x1="7.874" y1="8.763" x2="7.874" y2="-1.778" width="0.127" layer="21"/>
@@ -810,7 +825,7 @@ grid 5.08 mm</description>
 <rectangle x1="4.953" y1="-7.62" x2="6.223" y2="-5.715" layer="51"/>
 <hole x="0" y="12.7" drill="4.1148"/>
 </package>
-<package name="TOP3V">
+<package name="TOP3V" urn="urn:adsk.eagle:footprint:28684/1" library_version="6">
 <description>&lt;b&gt;TOP 3 vertical&lt;/b&gt;</description>
 <wire x1="6.985" y1="-5.08" x2="7.366" y2="-4.699" width="0.127" layer="21"/>
 <wire x1="7.366" y1="-4.699" x2="7.493" y2="-1.524" width="0.127" layer="21"/>
@@ -840,22 +855,7 @@ grid 5.08 mm</description>
 <rectangle x1="-1.397" y1="-1.524" x2="1.397" y2="-1.143" layer="51"/>
 <rectangle x1="4.064" y1="-1.524" x2="6.858" y2="-1.143" layer="51"/>
 </package>
-<package name="SOT23-BEC">
-<description>TO-236 ITT Intermetall</description>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.127" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.127" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.127" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.127" layer="51"/>
-<smd name="C" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="E" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="B" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
-<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
-<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
-</package>
-<package name="SOT23-EBC">
+<package name="SOT23-EBC" urn="urn:adsk.eagle:footprint:28686/1" library_version="6">
 <description>&lt;b&gt;SOT-23 (EBC)&lt;/b&gt;</description>
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.127" layer="51"/>
 <wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.127" layer="51"/>
@@ -870,7 +870,7 @@ grid 5.08 mm</description>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
-<package name="TO92-BCE">
+<package name="TO92-BCE" urn="urn:adsk.eagle:footprint:28687/1" library_version="6">
 <description>&lt;b&gt;TO-92&lt;/b&gt; Pads In Line B C E from top&lt;p&gt;</description>
 <wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.127" layer="21"/>
 <wire x1="-2.413" y1="1.1359" x2="2.413" y2="1.1359" width="0.127" layer="21" curve="-129.583345"/>
@@ -891,7 +891,7 @@ grid 5.08 mm</description>
 <text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.54" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="TO92-CBE">
+<package name="TO92-CBE" urn="urn:adsk.eagle:footprint:28688/1" library_version="6">
 <description>&lt;b&gt;TO-92&lt;/b&gt; Pads In Line  C B E from top&lt;p&gt;</description>
 <wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.127" layer="21"/>
 <wire x1="-2.413" y1="1.1359" x2="2.413" y2="1.1359" width="0.127" layer="21" curve="-129.583345"/>
@@ -912,7 +912,7 @@ grid 5.08 mm</description>
 <text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.54" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="TO92-BEC">
+<package name="TO92-BEC" urn="urn:adsk.eagle:footprint:28689/1" library_version="6">
 <description>&lt;b&gt;TO-92&lt;/b&gt; Pads In Line  B E C from top&lt;p&gt;</description>
 <wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.127" layer="21"/>
 <wire x1="-2.413" y1="1.1359" x2="2.413" y2="1.1359" width="0.127" layer="21" curve="-129.583345"/>
@@ -933,7 +933,7 @@ grid 5.08 mm</description>
 <text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.54" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="TO92-CEB">
+<package name="TO92-CEB" urn="urn:adsk.eagle:footprint:28690/1" library_version="6">
 <description>&lt;b&gt;TO-92&lt;/b&gt; Pads In Line C E B from top&lt;p&gt;</description>
 <wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.127" layer="21"/>
 <wire x1="-2.413" y1="1.1359" x2="2.413" y2="1.1359" width="0.127" layer="21" curve="-129.583345"/>
@@ -954,7 +954,7 @@ grid 5.08 mm</description>
 <text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.54" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="SC59-BEC">
+<package name="SC59-BEC" urn="urn:adsk.eagle:footprint:28691/1" library_version="6">
 <description>SC59 (SOT23) Motorola</description>
 <wire x1="1.4224" y1="0.8604" x2="1.4224" y2="-0.8604" width="0.127" layer="51"/>
 <wire x1="1.4224" y1="-0.8604" x2="-1.4224" y2="-0.8604" width="0.127" layer="51"/>
@@ -969,7 +969,7 @@ grid 5.08 mm</description>
 <rectangle x1="0.7112" y1="-1.4954" x2="1.1684" y2="-0.9112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.4954" x2="-0.7112" y2="-0.9112" layer="51"/>
 </package>
-<package name="SOT89-BCE">
+<package name="SOT89-BCE" urn="urn:adsk.eagle:footprint:28692/1" library_version="6">
 <description>SOT98 Basis Collector Emitter</description>
 <wire x1="2.235" y1="-1.245" x2="-2.235" y2="-1.245" width="0.127" layer="51"/>
 <wire x1="2.235" y1="1.219" x2="2.235" y2="-1.245" width="0.127" layer="51"/>
@@ -1003,7 +1003,7 @@ grid 5.08 mm</description>
 <vertex x="-0.7874" y="1.2954"/>
 </polygon>
 </package>
-<package name="SOT37">
+<package name="SOT37" urn="urn:adsk.eagle:footprint:28693/1" library_version="6">
 <description>&lt;b&gt;SOT-37&lt;/b&gt;&lt;p&gt;
 Motorola CASE 317A-01 ISSUE B&lt;br&gt;
 http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
@@ -1073,7 +1073,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <rectangle x1="-0.508" y1="2.413" x2="0.508" y2="2.794" layer="21"/>
 <hole x="0" y="0" drill="5.08"/>
 </package>
-<package name="TO92-ECB">
+<package name="TO92-ECB" urn="urn:adsk.eagle:footprint:28694/1" library_version="6">
 <description>&lt;b&gt;TO-92&lt;/b&gt; Pads In Line E C B from top&lt;p&gt;</description>
 <wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.127" layer="21"/>
 <wire x1="-2.413" y1="1.1359" x2="2.413" y2="1.1359" width="0.127" layer="21" curve="-129.583345"/>
@@ -1094,7 +1094,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.54" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="SOT223">
+<package name="SOT223" urn="urn:adsk.eagle:footprint:28484/1" library_version="6">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
 <wire x1="3.2766" y1="1.778" x2="3.2766" y2="-1.778" width="0.2032" layer="21"/>
 <wire x1="3.2766" y1="-1.778" x2="-3.2766" y2="-1.778" width="0.2032" layer="21"/>
@@ -1120,8 +1120,220 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="SOT23-BEC" urn="urn:adsk.eagle:package:28748/2" type="model" library_version="6">
+<description>TO-236 ITT Intermetall</description>
+<packageinstances>
+<packageinstance name="SOT23-BEC"/>
+</packageinstances>
+</package3d>
+<package3d name="TO3" urn="urn:adsk.eagle:package:28727/2" type="model" library_version="6">
+<description>TO-3</description>
+<packageinstances>
+<packageinstance name="TO3"/>
+</packageinstances>
+</package3d>
+<package3d name="TO18" urn="urn:adsk.eagle:package:28728/2" type="model" library_version="6">
+<description>TO 18</description>
+<packageinstances>
+<packageinstance name="TO18"/>
+</packageinstances>
+</package3d>
+<package3d name="TO18-" urn="urn:adsk.eagle:package:28739/2" type="model" library_version="6">
+<description>TO-18</description>
+<packageinstances>
+<packageinstance name="TO18-"/>
+</packageinstances>
+</package3d>
+<package3d name="TO202" urn="urn:adsk.eagle:package:28525/1" type="box" library_version="6">
+<description>TO 202 horizontal</description>
+<packageinstances>
+<packageinstance name="TO202"/>
+</packageinstances>
+</package3d>
+<package3d name="TO202V" urn="urn:adsk.eagle:package:28741/1" type="box" library_version="6">
+<description>TO 202 vertical</description>
+<packageinstances>
+<packageinstance name="TO202V"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT93" urn="urn:adsk.eagle:package:28736/1" type="box" library_version="6">
+<description>SOT-93
+grid 5.45 mm</description>
+<packageinstances>
+<packageinstance name="SOT93"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT93V" urn="urn:adsk.eagle:package:28764/1" type="box" library_version="6">
+<description>SOT-93
+grid 5.45 mm</description>
+<packageinstances>
+<packageinstance name="SOT93V"/>
+</packageinstances>
+</package3d>
+<package3d name="TO126" urn="urn:adsk.eagle:package:28732/1" type="box" library_version="6">
+<description>TO 126 horizontal</description>
+<packageinstances>
+<packageinstance name="TO126"/>
+</packageinstances>
+</package3d>
+<package3d name="TO126V" urn="urn:adsk.eagle:package:28743/1" type="box" library_version="6">
+<description>TO 126 vertical</description>
+<packageinstances>
+<packageinstance name="TO126V"/>
+</packageinstances>
+</package3d>
+<package3d name="TO218" urn="urn:adsk.eagle:package:28744/1" type="box" library_version="6">
+<description>TO 218 horizontal</description>
+<packageinstances>
+<packageinstance name="TO218"/>
+</packageinstances>
+</package3d>
+<package3d name="TO218V" urn="urn:adsk.eagle:package:28519/1" type="box" library_version="6">
+<description>TO 218 vertical</description>
+<packageinstances>
+<packageinstance name="TO218V"/>
+</packageinstances>
+</package3d>
+<package3d name="TO220" urn="urn:adsk.eagle:package:28520/1" type="box" library_version="6">
+<description>TO 220 horizontal</description>
+<packageinstances>
+<packageinstance name="TO220"/>
+</packageinstances>
+</package3d>
+<package3d name="TO220V" urn="urn:adsk.eagle:package:28746/2" type="model" library_version="6">
+<description>TO 220 vertical</description>
+<packageinstances>
+<packageinstance name="TO220V"/>
+</packageinstances>
+</package3d>
+<package3d name="TO225AA" urn="urn:adsk.eagle:package:28737/1" type="box" library_version="6">
+<description>TO-225
+grid 2.54 mm, vertical</description>
+<packageinstances>
+<packageinstance name="TO225AA"/>
+</packageinstances>
+</package3d>
+<package3d name="TO39" urn="urn:adsk.eagle:package:28730/1" type="box" library_version="6">
+<description>TO-39</description>
+<packageinstances>
+<packageinstance name="TO39"/>
+</packageinstances>
+</package3d>
+<package3d name="TO5" urn="urn:adsk.eagle:package:28729/1" type="box" library_version="6">
+<description>TO 5</description>
+<packageinstances>
+<packageinstance name="TO5"/>
+</packageinstances>
+</package3d>
+<package3d name="TO66" urn="urn:adsk.eagle:package:28726/1" type="box" library_version="6">
+<description>TO-66</description>
+<packageinstances>
+<packageinstance name="TO66"/>
+</packageinstances>
+</package3d>
+<package3d name="TO92" urn="urn:adsk.eagle:package:28725/2" type="model" library_version="6">
+<description>TO 92</description>
+<packageinstances>
+<packageinstance name="TO92"/>
+</packageinstances>
+</package3d>
+<package3d name="TO92-EBC" urn="urn:adsk.eagle:package:28763/2" type="model" library_version="6">
+<description>TO-92 Pads In Line E B C from top</description>
+<packageinstances>
+<packageinstance name="TO92-EBC"/>
+</packageinstances>
+</package3d>
+<package3d name="TO92-E1" urn="urn:adsk.eagle:package:28753/1" type="box" library_version="6">
+<description>TO-92 Pads Triangle Reverse</description>
+<packageinstances>
+<packageinstance name="TO92-E1"/>
+</packageinstances>
+</package3d>
+<package3d name="TO92L" urn="urn:adsk.eagle:package:28747/1" type="box" library_version="6">
+<description>TO-92
+grid 5.08 mm</description>
+<packageinstances>
+<packageinstance name="TO92L"/>
+</packageinstances>
+</package3d>
+<package3d name="TOP3" urn="urn:adsk.eagle:package:28735/1" type="box" library_version="6">
+<description>TOP 3 horizontal</description>
+<packageinstances>
+<packageinstance name="TOP3"/>
+</packageinstances>
+</package3d>
+<package3d name="TOP3V" urn="urn:adsk.eagle:package:28768/1" type="box" library_version="6">
+<description>TOP 3 vertical</description>
+<packageinstances>
+<packageinstance name="TOP3V"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT23-EBC" urn="urn:adsk.eagle:package:28750/3" type="model" library_version="6">
+<description>SOT-23 (EBC)</description>
+<packageinstances>
+<packageinstance name="SOT23-EBC"/>
+</packageinstances>
+</package3d>
+<package3d name="TO92-BCE" urn="urn:adsk.eagle:package:28749/4" type="model" library_version="6">
+<description>TO-92 Pads In Line B C E from top</description>
+<packageinstances>
+<packageinstance name="TO92-BCE"/>
+</packageinstances>
+</package3d>
+<package3d name="TO92-CBE" urn="urn:adsk.eagle:package:28751/2" type="model" library_version="6">
+<description>TO-92 Pads In Line  C B E from top</description>
+<packageinstances>
+<packageinstance name="TO92-CBE"/>
+</packageinstances>
+</package3d>
+<package3d name="TO92-BEC" urn="urn:adsk.eagle:package:28752/3" type="model" library_version="6">
+<description>TO-92 Pads In Line  B E C from top</description>
+<packageinstances>
+<packageinstance name="TO92-BEC"/>
+</packageinstances>
+</package3d>
+<package3d name="TO92-CEB" urn="urn:adsk.eagle:package:28757/2" type="model" library_version="6">
+<description>TO-92 Pads In Line C E B from top</description>
+<packageinstances>
+<packageinstance name="TO92-CEB"/>
+</packageinstances>
+</package3d>
+<package3d name="SC59-BEC" urn="urn:adsk.eagle:package:28754/2" type="model" library_version="6">
+<description>SC59 (SOT23) Motorola</description>
+<packageinstances>
+<packageinstance name="SC59-BEC"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT89-BCE" urn="urn:adsk.eagle:package:28755/2" type="model" library_version="6">
+<description>SOT98 Basis Collector Emitter</description>
+<packageinstances>
+<packageinstance name="SOT89-BCE"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT37" urn="urn:adsk.eagle:package:28760/1" type="box" library_version="6">
+<description>SOT-37
+Motorola CASE 317A-01 ISSUE B
+http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
+<packageinstances>
+<packageinstance name="SOT37"/>
+</packageinstances>
+</package3d>
+<package3d name="TO92-ECB" urn="urn:adsk.eagle:package:28756/2" type="model" library_version="6">
+<description>TO-92 Pads In Line E C B from top</description>
+<packageinstances>
+<packageinstance name="TO92-ECB"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT223" urn="urn:adsk.eagle:package:28541/2" type="model" library_version="6">
+<description>Small Outline Transistor</description>
+<packageinstances>
+<packageinstance name="SOT223"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="NPN">
+<symbol name="NPN" urn="urn:adsk.eagle:symbol:26256/2" library_version="6">
 <wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
 <wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
@@ -1141,7 +1353,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="*-NPN-" prefix="T" uservalue="yes">
+<deviceset name="*-NPN-" urn="urn:adsk.eagle:component:28911/20" prefix="T" uservalue="yes" library_version="6">
 <description>NPN Transistror</description>
 <gates>
 <gate name="G$1" symbol="NPN" x="0" y="0"/>
@@ -1153,10 +1365,19 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28727/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
-<technology name="2N5885"/>
-<technology name="2N5886"/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N5885">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N5886">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO18-EBC" package="TO18">
@@ -1165,29 +1386,76 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="3"/>
 <connect gate="G$1" pin="E" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28728/2"/>
+</package3dinstances>
 <technologies>
-<technology name="2N2218"/>
-<technology name="2N2222"/>
-<technology name="2N2222A"/>
-<technology name="2N2369"/>
-<technology name="2N2369A"/>
-<technology name="2N2484"/>
-<technology name="2N2896"/>
-<technology name="2N3700"/>
-<technology name="2N930"/>
-<technology name="BC107A"/>
-<technology name="BC107B"/>
-<technology name="BC108B"/>
-<technology name="BC108C"/>
-<technology name="BCY58-IX"/>
-<technology name="BCY58-VIII"/>
-<technology name="BCY59-VII"/>
-<technology name="BCY59-VIII"/>
-<technology name="BCY59-X"/>
-<technology name="BSS71"/>
-<technology name="BSS72"/>
-<technology name="BSS73"/>
-<technology name="BSX20"/>
+<technology name="2N2218">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N2222">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N2222A">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N2369">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N2369A">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N2484">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N2896">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N3700">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N930">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC107A">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC107B">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC108B">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC108C">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCY58-IX">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCY58-VIII">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCY59-VII">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCY59-VIII">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCY59-X">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BSS71">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BSS72">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BSS73">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BSX20">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO18-" package="TO18-">
@@ -1196,8 +1464,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="3"/>
 <connect gate="G$1" pin="E" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28739/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO202" package="TO202">
@@ -1206,8 +1479,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="2"/>
 <connect gate="G$1" pin="E" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28525/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO202V" package="TO202V">
@@ -1216,8 +1494,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="2"/>
 <connect gate="G$1" pin="E" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28741/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOT93" package="SOT93">
@@ -1226,8 +1509,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28736/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOT93V" package="SOT93V">
@@ -1236,8 +1524,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28764/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO126" package="TO126">
@@ -1246,8 +1539,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="2"/>
 <connect gate="G$1" pin="E" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28732/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO126V" package="TO126V">
@@ -1256,8 +1554,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="2"/>
 <connect gate="G$1" pin="E" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28743/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO218" package="TO218">
@@ -1266,8 +1569,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="2"/>
 <connect gate="G$1" pin="E" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28744/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO218V" package="TO218V">
@@ -1276,8 +1584,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="2"/>
 <connect gate="G$1" pin="E" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28519/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO220" package="TO220">
@@ -1286,10 +1599,19 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="2"/>
 <connect gate="G$1" pin="E" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28520/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
-<technology name="2N6288"/>
-<technology name="2N6292"/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N6288">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N6292">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO220V" package="TO220V">
@@ -1298,8 +1620,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="2"/>
 <connect gate="G$1" pin="E" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28746/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO225AA" package="TO225AA">
@@ -1308,10 +1635,19 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="2"/>
 <connect gate="G$1" pin="E" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28737/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
-<technology name="2N5655"/>
-<technology name="2N5657"/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N5655">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N5657">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO39-EBC" package="TO39">
@@ -1320,26 +1656,67 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="3"/>
 <connect gate="G$1" pin="E" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28730/1"/>
+</package3dinstances>
 <technologies>
-<technology name="2N1613"/>
-<technology name="2N1711"/>
-<technology name="2N1893"/>
-<technology name="2N2102"/>
-<technology name="2N2218"/>
-<technology name="2N2219"/>
-<technology name="2N2219A"/>
-<technology name="2N3019"/>
-<technology name="2N3020"/>
-<technology name="2N3439"/>
-<technology name="2N3440"/>
-<technology name="BC140-10"/>
-<technology name="BC140-16"/>
-<technology name="BC141-10"/>
-<technology name="BC141-16"/>
-<technology name="BFY50"/>
-<technology name="BSX45-16"/>
-<technology name="BSX46-10"/>
-<technology name="BSX46-16"/>
+<technology name="2N1613">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N1711">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N1893">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N2102">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N2218">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N2219">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N2219A">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N3019">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N3020">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N3439">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N3440">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC140-10">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC140-16">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC141-10">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC141-16">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BFY50">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BSX45-16">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BSX46-10">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BSX46-16">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO5" package="TO5">
@@ -1348,8 +1725,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="3"/>
 <connect gate="G$1" pin="E" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28729/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO66" package="TO66">
@@ -1358,8 +1740,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="3"/>
 <connect gate="G$1" pin="E" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28726/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO92" package="TO92">
@@ -1368,8 +1755,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="3"/>
 <connect gate="G$1" pin="E" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28725/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO92-EBC" package="TO92-EBC">
@@ -1378,18 +1770,43 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28763/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
-<technology name="2N2222"/>
-<technology name="2N3903"/>
-<technology name="2N3904"/>
-<technology name="2N4123"/>
-<technology name="2N4124"/>
-<technology name="2N4401"/>
-<technology name="2N5088"/>
-<technology name="2N5089"/>
-<technology name="2N5550"/>
-<technology name="2N5551"/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N2222">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N3903">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N3904">
+<attribute name="POPULARITY" value="17" constant="no"/>
+</technology>
+<technology name="2N4123">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N4124">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N4401">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N5088">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N5089">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N5550">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N5551">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO92-E1" package="TO92-E1">
@@ -1398,8 +1815,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="1"/>
 <connect gate="G$1" pin="E" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28753/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO92L" package="TO92L">
@@ -1408,8 +1830,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="3"/>
 <connect gate="G$1" pin="E" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28747/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TOP3" package="TOP3">
@@ -1418,8 +1845,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="2"/>
 <connect gate="G$1" pin="E" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28735/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TOP3V" package="TOP3V">
@@ -1428,8 +1860,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28768/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOT23-BEC" package="SOT23-BEC">
@@ -1438,84 +1875,241 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28748/2"/>
+</package3dinstances>
 <technologies>
-<technology name="BC808"/>
-<technology name="BC817"/>
-<technology name="BC817-16"/>
-<technology name="BC817-16LT1"/>
-<technology name="BC817-25"/>
-<technology name="BC817-25LT1"/>
-<technology name="BC817-40"/>
-<technology name="BC817-40LT1"/>
-<technology name="BC818"/>
-<technology name="BC818-16"/>
-<technology name="BC818-25"/>
-<technology name="BC818-40"/>
-<technology name="BC846"/>
-<technology name="BC846A"/>
-<technology name="BC846ALT1"/>
-<technology name="BC846B"/>
-<technology name="BC846BLT1"/>
-<technology name="BC847"/>
-<technology name="BC847A"/>
-<technology name="BC847ALT1"/>
-<technology name="BC847B"/>
-<technology name="BC847BLT1"/>
-<technology name="BC847C"/>
-<technology name="BC847CLT1"/>
-<technology name="BC848"/>
-<technology name="BC848A"/>
-<technology name="BC848ALT1"/>
-<technology name="BC848B"/>
-<technology name="BC848BLT1"/>
-<technology name="BC848C"/>
-<technology name="BC848CLT1"/>
-<technology name="BC849"/>
-<technology name="BC850"/>
-<technology name="BCF29"/>
-<technology name="BCF30"/>
-<technology name="BCF32"/>
-<technology name="BCF33"/>
-<technology name="BCF81"/>
-<technology name="BCV71"/>
-<technology name="BCV72"/>
-<technology name="BCW31"/>
-<technology name="BCW32"/>
-<technology name="BCW33"/>
-<technology name="BCW60"/>
-<technology name="BCW71"/>
-<technology name="BCW72"/>
-<technology name="BCW81"/>
-<technology name="BCX19"/>
-<technology name="BCX20"/>
-<technology name="BCX70"/>
-<technology name="BF820"/>
-<technology name="BF822"/>
-<technology name="BFR53"/>
-<technology name="BFR92"/>
-<technology name="BFR92A"/>
-<technology name="BFR93"/>
-<technology name="BFR93A"/>
-<technology name="BFS17"/>
-<technology name="BFS19"/>
-<technology name="BFS20"/>
-<technology name="BFT25"/>
-<technology name="BSR12"/>
-<technology name="BSR13"/>
-<technology name="BSR14"/>
-<technology name="BSV52LT1"/>
-<technology name="MMBT2222ALT1"/>
-<technology name="MMBT2369LT1"/>
-<technology name="MMBT2484LT1"/>
-<technology name="MMBT3904LT1"/>
-<technology name="MMBT4401LT1"/>
-<technology name="MMBT5551LT1"/>
-<technology name="MMBT6429LT1"/>
-<technology name="MMBT6517LT1"/>
-<technology name="MMBT918LT1"/>
-<technology name="MMBTA42LT1"/>
-<technology name="MMBTH10LT1"/>
-<technology name="MMBTH24LT1"/>
+<technology name="BC808">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC817">
+<attribute name="POPULARITY" value="64" constant="no"/>
+</technology>
+<technology name="BC817-16">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC817-16LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC817-25">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC817-25LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC817-40">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC817-40LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC818">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC818-16">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC818-25">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC818-40">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC846">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC846A">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC846ALT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC846B">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC846BLT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC847">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC847A">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC847ALT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC847B">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC847BLT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC847C">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC847CLT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC848">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC848A">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC848ALT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC848B">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC848BLT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC848C">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC848CLT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC849">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC850">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCF29">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCF30">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCF32">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCF33">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCF81">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCV71">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCV72">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCW31">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCW32">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCW33">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCW60">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCW71">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCW72">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCW81">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCX19">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCX20">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCX70">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BF820">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BF822">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BFR53">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BFR92">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BFR92A">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BFR93">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BFR93A">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BFS17">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BFS19">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BFS20">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BFT25">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BSR12">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BSR13">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BSR14">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BSV52LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="MMBT2222ALT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="MMBT2369LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="MMBT2484LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="MMBT3904LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="MMBT4401LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="MMBT5551LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="MMBT6429LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="MMBT6517LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="MMBT918LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="MMBTA42LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="MMBTH10LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="MMBTH24LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOT23-EBC" package="SOT23-EBC">
@@ -1524,8 +2118,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28750/3"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO92-BCE" package="TO92-BCE">
@@ -1534,8 +2133,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28749/4"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO92-CBE" package="TO92-CBE">
@@ -1544,8 +2148,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28751/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO92-BEC" package="TO92-BEC">
@@ -1554,9 +2163,16 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28752/3"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
-<technology name="2N3903"/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="2N3903">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO92-CEB" package="TO92-CEB">
@@ -1565,9 +2181,16 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28757/2"/>
+</package3dinstances>
 <technologies>
-<technology name="BF494"/>
-<technology name="BF495"/>
+<technology name="BF494">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BF495">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SC59-BEC" package="SC59-BEC">
@@ -1576,11 +2199,22 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28754/2"/>
+</package3dinstances>
 <technologies>
-<technology name="MMUN2211LT1"/>
-<technology name="MMUN2212LT1"/>
-<technology name="MMUN2213LT1"/>
-<technology name="MMUN2214LT1"/>
+<technology name="MMUN2211LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="MMUN2212LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="MMUN2213LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="MMUN2214LT1">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOT89-BCE" package="SOT89-BCE">
@@ -1589,13 +2223,28 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28755/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
-<technology name="BC868"/>
-<technology name="BCX54"/>
-<technology name="BCX55"/>
-<technology name="BCX56"/>
-<technology name="BF622"/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC868">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCX54">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCX55">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BCX56">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BF622">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOT-37" package="SOT37">
@@ -1604,8 +2253,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="1"/>
 <connect gate="G$1" pin="E" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28760/1"/>
+</package3dinstances>
 <technologies>
-<technology name="BFR96"/>
+<technology name="BFR96">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO92-ECB" package="TO92-ECB">
@@ -1614,9 +2268,16 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28756/2"/>
+</package3dinstances>
 <technologies>
-<technology name="BC368"/>
-<technology name="BC635"/>
+<technology name="BC368">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="BC635">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOT223" package="SOT223">
@@ -1625,9 +2286,16 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <connect gate="G$1" pin="C" pad="4"/>
 <connect gate="G$1" pin="E" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:28541/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
-<technology name="PZT2222A"/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="PZT2222A">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1735,13 +2403,13 @@ NS Package M08A</description>
 <package name="D0805-J">
 <text x="-0.762" y="1.016" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.762" y="-2.286" size="1.27" layer="27">&gt;VALUE</text>
-<smd name="A" x="-1" y="0" dx="1.2" dy="1.3" layer="1"/>
-<smd name="C" x="1" y="0" dx="1.2" dy="1.3" layer="1"/>
-<rectangle x1="1.651" y1="-0.635" x2="1.905" y2="0.635" layer="25"/>
+<smd name="A" x="1" y="0" dx="1.2" dy="1.3" layer="1" rot="R180"/>
+<smd name="C" x="-1" y="0" dx="1.2" dy="1.3" layer="1" rot="R180"/>
+<rectangle x1="-1.905" y1="-0.635" x2="-1.651" y2="0.635" layer="25" rot="R180"/>
 <polygon width="0" layer="25">
-<vertex x="-0.254" y="0.508"/>
-<vertex x="-0.254" y="-0.508"/>
-<vertex x="0.254" y="0"/>
+<vertex x="0.254" y="-0.508"/>
+<vertex x="0.254" y="0.508"/>
+<vertex x="-0.254" y="0"/>
 </polygon>
 </package>
 <package name="DO35-10J">
@@ -1935,8 +2603,8 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/40039E.pdf</description>
 <rectangle x1="-1.45" y1="2.225" x2="-1.15" y2="3.2" layer="51" rot="R180"/>
 <rectangle x1="-2.1" y1="2.225" x2="-1.8" y2="3.2" layer="51" rot="R180"/>
 </package>
-<package name="R0603-J">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+<package name="C0603-J">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
 chip</description>
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
 <wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
@@ -2293,12 +2961,53 @@ chip</description>
 <rectangle x1="23.876" y1="-0.254" x2="24.384" y2="0.254" layer="51"/>
 <rectangle x1="26.416" y1="-0.254" x2="26.924" y2="0.254" layer="51"/>
 </package>
+<package name="SOD323J" urn="urn:adsk.eagle:footprint:30969/1" locally_modified="yes">
+<description>&lt;b&gt;Small Outline Diode&lt;/b&gt;</description>
+<wire x1="-0.8" y1="0.575" x2="0.8" y2="0.575" width="0.2032" layer="51"/>
+<wire x1="0.8" y1="0.575" x2="0.8" y2="-0.575" width="0.2032" layer="51"/>
+<wire x1="0.8" y1="-0.575" x2="-0.8" y2="-0.575" width="0.2032" layer="51"/>
+<wire x1="-0.8" y1="-0.575" x2="-0.8" y2="0.575" width="0.2032" layer="51"/>
+<smd name="1" x="-1.1" y="0" dx="1" dy="0.6" layer="1"/>
+<smd name="2" x="1.1" y="0" dx="1" dy="0.6" layer="1"/>
+<text x="-0.9" y="0.78" size="1.016" layer="25">&gt;NAME</text>
+<text x="-0.9" y="-1.805" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.35" y1="-0.2" x2="-0.9" y2="0.2" layer="51"/>
+<rectangle x1="0.9" y1="-0.2" x2="1.35" y2="0.2" layer="51"/>
+<rectangle x1="-0.75" y1="-0.575" x2="-0.375" y2="0.575" layer="51"/>
+</package>
+<package name="SOT-23J" urn="urn:adsk.eagle:footprint:30948/1" locally_modified="yes">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<wire x1="-1.4224" y1="0.381" x2="1.4732" y2="0.381" width="0.1524" layer="21"/>
+<wire x1="1.4732" y1="0.381" x2="1.4732" y2="-0.381" width="0.1524" layer="21"/>
+<wire x1="1.4732" y1="-0.381" x2="-1.4224" y2="-0.381" width="0.1524" layer="21"/>
+<wire x1="-1.4224" y1="-0.381" x2="-1.4224" y2="0.381" width="0.1524" layer="21"/>
+<smd name="3" x="0.9906" y="1.016" dx="0.7874" dy="0.889" layer="1"/>
+<smd name="2" x="-0.9398" y="1.016" dx="0.7874" dy="0.889" layer="1"/>
+<smd name="1" x="0.0254" y="-1.016" dx="0.7874" dy="0.889" layer="1"/>
+<text x="-1.397" y="1.778" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.397" y="3.302" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="0.7874" y1="0.4318" x2="1.1684" y2="0.9398" layer="51"/>
+<rectangle x1="-1.143" y1="0.4318" x2="-0.762" y2="0.9398" layer="51"/>
+<rectangle x1="-0.1778" y1="-0.9398" x2="0.2032" y2="-0.4318" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="DIL08" urn="urn:adsk.eagle:package:16409/2" type="model">
 <description>Dual In Line Package</description>
 <packageinstances>
 <packageinstance name="DIL08"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD323" urn="urn:adsk.eagle:package:30992/2" type="model">
+<description>Small Outline Diode</description>
+<packageinstances>
+<packageinstance name="SOD323J"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT-23" urn="urn:adsk.eagle:package:30981/1" type="box">
+<description>Small Outline Transistor</description>
+<packageinstances>
+<packageinstance name="SOT-23J"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2330,19 +3039,18 @@ chip</description>
 <pin name="V+" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
 <pin name="V-" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 </symbol>
-<symbol name="DIODE_J">
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<symbol name="DIODE">
+<wire x1="-1.016" y1="-1.27" x2="1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="1.016" y1="0" x2="-1.016" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.27" x2="1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.27" x2="-1.016" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.016" y1="0" x2="1.016" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.11125" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0.9525" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<text x="2.54" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1778" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1778" layer="94"/>
 </symbol>
 <symbol name="LM311">
 <wire x1="-3.81" y1="3.175" x2="-3.81" y2="1.905" width="0.1524" layer="94"/>
@@ -2581,7 +3289,7 @@ chip</description>
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 high speed (Philips)</description>
 <gates>
-<gate name="G$1" symbol="DIODE_J" x="0" y="0"/>
+<gate name="G$1" symbol="DIODE" x="0" y="0"/>
 </gates>
 <devices>
 <device name="DO35-10" package="DO35-10J">
@@ -2593,7 +3301,7 @@ high speed (Philips)</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="DO35-7" package="DO35-7J">
+<device name="DO35-5" package="DO35-5J">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -2602,7 +3310,7 @@ high speed (Philips)</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="DOJ35-5" package="DO35-5J">
+<device name="DO35-7" package="DO35-7J">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -2625,6 +3333,30 @@ high speed (Philips)</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOD323" package="SOD323J">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30992/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT23" package="SOT-23J">
+<connects>
+<connect gate="G$1" pin="A" pad="3"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30981/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -2788,7 +3520,7 @@ high speed (Philips)</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="0603" package="R0603-J">
+<device name="0603" package="C0603-J">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -7507,35 +8239,35 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k2"/>
 <part name="20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="15k"/>
 <part name="22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="22k"/>
-<part name="T1" library="transistor-neu-to92" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT3904LT1" value="2n3904"/>
-<part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="GND4" library="supply1" deviceset="GND" device=""/>
+<part name="T1" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" deviceset="*-NPN-" device="SOT23-BEC" package3d_urn="urn:adsk.eagle:package:28748/2" technology="MMBT3904LT1" value="2n3904"/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
 <part name="24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
-<part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="20k"/>
 <part name="26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="24k"/>
 <part name="27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="24k"/>
 <part name="28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="20k"/>
 <part name="29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="20k"/>
 <part name="30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="20k"/>
-<part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
-<part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="38" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="49.9k"/>
 <part name="39" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
 <part name="40" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="120k"/>
 <part name="41" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="49.9k"/>
-<part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="44" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="49.9k"/>
 <part name="45" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="120k"/>
 <part name="46" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="49.9k"/>
 <part name="47" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
 <part name="48" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33k"/>
 <part name="49" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
-<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C1" library="joakim" deviceset="C-EU-J" device="0603" value="10pF"/>
 <part name="C2" library="joakim" deviceset="C-EU-J" device="0603" value="10pF"/>
 <part name="C3" library="joakim" deviceset="C-EU-J" device="0603" value="30pF"/>
@@ -7543,19 +8275,19 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="C5" library="joakim" deviceset="C-EU-J" device="0603" value="100nF"/>
 <part name="C6" library="joakim" deviceset="C-EU-J" device="0603" value="100nF"/>
 <part name="C7" library="joakim" deviceset="C-EU-J" device="0603" value="3pF"/>
-<part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC5" library="joakim" deviceset="4013" device="T" value="4013T"/>
-<part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="GND17" library="supply1" deviceset="GND" device=""/>
-<part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="GND19" library="supply1" deviceset="GND" device=""/>
-<part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="GND21" library="supply1" deviceset="GND" device=""/>
+<part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC4" library="joakim" deviceset="TL072J" device="T" value="TL072JT"/>
-<part name="GND22" library="supply1" deviceset="GND" device=""/>
-<part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="GND24" library="supply1" deviceset="GND" device=""/>
+<part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D1" library="joakim" deviceset="1N4148" device="0805"/>
 <part name="D2" library="joakim" deviceset="1N4148" device="0805"/>
 <part name="D3" library="joakim" deviceset="1N4148" device="0805"/>
@@ -7564,13 +8296,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="C10" library="joakim" deviceset="C-EU-J" device="0402" value="1uF"/>
 <part name="C11" library="joakim" deviceset="C-EU-J" device="0402" value="1uF"/>
 <part name="C8" library="joakim" deviceset="C-EU-J" device="0402" value="1uF"/>
-<part name="GND26" library="supply1" deviceset="GND" device=""/>
-<part name="GND28" library="supply1" deviceset="GND" device=""/>
+<part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-12V" device=""/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-12V" device=""/>
-<part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="30k"/>
 <part name="31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="27k"/>
 <part name="21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="15k"/>
@@ -7580,22 +8312,22 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="C13" library="joakim" deviceset="C-EU-J" device="0402" value="1uF"/>
 <part name="IC6" library="joakim" deviceset="LM311" device="T"/>
 <part name="C14" library="joakim" deviceset="C-EU-J" device="0603" value="820pF"/>
-<part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="500R"/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
-<part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-12V" device=""/>
 <part name="2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
 <part name="33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
-<part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C15" library="joakim" deviceset="C-EU-J" device="0402" value="1uF"/>
 <part name="C17" library="joakim" deviceset="C-EU-J" device="0402" value="1uF"/>
 <part name="C18" library="joakim" deviceset="C-EU-J" device="0402" value="1uF"/>
 <part name="C19" library="joakim" deviceset="C-EU-J" device="0402" value="1uF"/>
 <part name="34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
 <part name="36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
-<part name="GND25" library="supply1" deviceset="GND" device=""/>
+<part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="X1" library="joakim" deviceset="MA22-1J" device="N"/>
 </parts>
 <sheets>
