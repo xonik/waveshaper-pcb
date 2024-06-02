@@ -1386,52 +1386,52 @@ chip</description>
 </package>
 <package name="MA22N-1J">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<pad name="1" x="-15.24" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="2" x="-12.7" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="3" x="-10.16" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="4" x="-7.62" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="5" x="-5.08" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="6" x="-2.54" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="7" x="0" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="8" x="2.54" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="9" x="5.08" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="10" x="7.62" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="11" x="10.16" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="12" x="12.7" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="13" x="15.24" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<text x="-13.97" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="38.1" y="-2.921" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-10.414" y1="-0.254" x2="-9.906" y2="0.254" layer="51"/>
-<rectangle x1="-12.954" y1="-0.254" x2="-12.446" y2="0.254" layer="51"/>
-<rectangle x1="-7.874" y1="-0.254" x2="-7.366" y2="0.254" layer="51"/>
-<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
-<rectangle x1="-5.334" y1="-0.254" x2="-4.826" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
-<rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
-<rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
-<rectangle x1="14.986" y1="-0.254" x2="15.494" y2="0.254" layer="51"/>
-<rectangle x1="17.526" y1="-0.254" x2="18.034" y2="0.254" layer="51"/>
-<pad name="14" x="17.78" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<rectangle x1="-15.494" y1="-0.254" x2="-14.986" y2="0.254" layer="51"/>
-<pad name="15" x="20.32" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="16" x="22.86" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="17" x="25.4" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="18" x="27.94" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="19" x="30.48" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="20" x="33.02" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="21" x="35.56" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="22" x="38.1" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<rectangle x1="22.606" y1="-0.254" x2="23.114" y2="0.254" layer="51"/>
-<rectangle x1="20.066" y1="-0.254" x2="20.574" y2="0.254" layer="51"/>
-<rectangle x1="25.146" y1="-0.254" x2="25.654" y2="0.254" layer="51"/>
-<rectangle x1="30.226" y1="-0.254" x2="30.734" y2="0.254" layer="51"/>
-<rectangle x1="27.686" y1="-0.254" x2="28.194" y2="0.254" layer="51"/>
-<rectangle x1="32.766" y1="-0.254" x2="33.274" y2="0.254" layer="51"/>
-<rectangle x1="37.846" y1="-0.254" x2="38.354" y2="0.254" layer="51"/>
-<rectangle x1="35.306" y1="-0.254" x2="35.814" y2="0.254" layer="51"/>
+<pad name="1" x="-26.67" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="2" x="-24.13" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="3" x="-21.59" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="4" x="-19.05" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="5" x="-16.51" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="6" x="-13.97" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="7" x="-11.43" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="8" x="-8.89" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="9" x="-6.35" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="10" x="-3.81" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="11" x="-1.27" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="12" x="1.27" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="13" x="3.81" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<text x="-25.4" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="26.67" y="-2.921" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-21.844" y1="-0.254" x2="-21.336" y2="0.254" layer="51"/>
+<rectangle x1="-24.384" y1="-0.254" x2="-23.876" y2="0.254" layer="51"/>
+<rectangle x1="-19.304" y1="-0.254" x2="-18.796" y2="0.254" layer="51"/>
+<rectangle x1="-14.224" y1="-0.254" x2="-13.716" y2="0.254" layer="51"/>
+<rectangle x1="-16.764" y1="-0.254" x2="-16.256" y2="0.254" layer="51"/>
+<rectangle x1="-11.684" y1="-0.254" x2="-11.176" y2="0.254" layer="51"/>
+<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
+<rectangle x1="-9.144" y1="-0.254" x2="-8.636" y2="0.254" layer="51"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
+<pad name="14" x="6.35" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<rectangle x1="-26.924" y1="-0.254" x2="-26.416" y2="0.254" layer="51"/>
+<pad name="15" x="8.89" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="16" x="11.43" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="17" x="13.97" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="18" x="16.51" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="19" x="19.05" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="20" x="21.59" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="21" x="24.13" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="22" x="26.67" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<rectangle x1="11.176" y1="-0.254" x2="11.684" y2="0.254" layer="51"/>
+<rectangle x1="8.636" y1="-0.254" x2="9.144" y2="0.254" layer="51"/>
+<rectangle x1="13.716" y1="-0.254" x2="14.224" y2="0.254" layer="51"/>
+<rectangle x1="18.796" y1="-0.254" x2="19.304" y2="0.254" layer="51"/>
+<rectangle x1="16.256" y1="-0.254" x2="16.764" y2="0.254" layer="51"/>
+<rectangle x1="21.336" y1="-0.254" x2="21.844" y2="0.254" layer="51"/>
+<rectangle x1="26.416" y1="-0.254" x2="26.924" y2="0.254" layer="51"/>
+<rectangle x1="23.876" y1="-0.254" x2="24.384" y2="0.254" layer="51"/>
 </package>
 </packages>
 </library>
@@ -3115,8 +3115,8 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <attribute name="SPICEPREFIX" value="R" x="7.62" y="19.3675" size="0.8128" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="VALUE" x="9.525" y="18.7325" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="X1" library="joakim" package="MA22N-1J" value="" x="16.51" y="1.27" smashed="yes">
-<attribute name="VALUE" x="54.61" y="-1.651" size="1.27" layer="27" ratio="10"/>
+<element name="X1" library="joakim" package="MA22N-1J" value="" x="27.94" y="1.27" smashed="yes">
+<attribute name="VALUE" x="66.04" y="-1.651" size="1.27" layer="27" ratio="10"/>
 </element>
 </elements>
 <signals>
@@ -3308,10 +3308,10 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <contactref element="4" pad="2"/>
 <contactref element="5" pad="2"/>
 <wire x1="1.27" y1="4.5475" x2="1.27" y2="3.4925" width="0.254" layer="1"/>
+<wire x1="1.27" y1="3.4925" x2="1.27" y2="1.27" width="0.254" layer="1"/>
 <wire x1="1.27" y1="3.4925" x2="3.175" y2="3.4925" width="0.254" layer="1"/>
 <wire x1="3.4925" y1="3.81" x2="3.175" y2="3.4925" width="0.254" layer="1"/>
 <wire x1="3.4925" y1="3.81" x2="3.4925" y2="4.5475" width="0.254" layer="1"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="3.4925" width="0.254" layer="1"/>
 <contactref element="X1" pad="1"/>
 </signal>
 <signal name="N$5">
@@ -3364,9 +3364,10 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="4.841875" y1="7.699375" x2="4.92125" y2="7.62" width="0.254" layer="16"/>
 <wire x1="4.92125" y1="7.62" x2="4.92125" y2="6.50875" width="0.254" layer="16"/>
 <via x="4.92125" y="6.50875" extent="1-16" drill="0.3302"/>
+<wire x1="6.35" y1="1.42875" x2="5.08" y2="2.69875" width="0.254" layer="1"/>
+<wire x1="6.35" y1="1.42875" x2="6.35" y2="1.27" width="0.254" layer="1"/>
 <wire x1="4.92125" y1="6.50875" x2="5.08" y2="6.35" width="0.254" layer="1"/>
-<wire x1="5.08" y1="2.54" x2="6.35" y2="1.27" width="0.254" layer="1"/>
-<wire x1="5.08" y1="6.35" x2="5.08" y2="2.54" width="0.254" layer="1"/>
+<wire x1="5.08" y1="6.35" x2="5.08" y2="2.69875" width="0.254" layer="1"/>
 <wire x1="4.4" y1="8.9225" x2="4.4" y2="7.82375" width="0.254" layer="1"/>
 <wire x1="4.4" y1="7.82375" x2="4.445" y2="7.77875" width="0.254" layer="1"/>
 <contactref element="X1" pad="3"/>
@@ -3398,8 +3399,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <via x="18.57375" y="4.28625" extent="1-16" drill="0.3302"/>
 <wire x1="18.57375" y1="4.28625" x2="13.97" y2="4.28625" width="0.254" layer="16"/>
 <via x="13.97" y="4.28625" extent="1-16" drill="0.3302"/>
-<wire x1="19.05" y1="1.27" x2="19.05" y2="3.01625" width="0.254" layer="1"/>
-<wire x1="19.05" y1="3.01625" x2="19.05" y2="3.4925" width="0.254" layer="1"/>
+<wire x1="19.05" y1="1.27" x2="19.05" y2="3.4925" width="0.254" layer="1"/>
 <wire x1="10.63625" y1="10.63625" x2="12.22375" y2="10.63625" width="0.254" layer="1"/>
 <wire x1="12.7" y1="8.09625" x2="13.096875" y2="7.699375" width="0.254" layer="1"/>
 <wire x1="13.096875" y1="7.699375" x2="13.97" y2="6.82625" width="0.254" layer="1"/>
@@ -3547,8 +3547,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="39.6875" y1="3.65125" x2="39.6875" y2="3.6703" width="0.254" layer="1"/>
 <via x="39.6875" y="3.6703" extent="1-16" drill="0.3302"/>
 <wire x1="39.6875" y1="3.6703" x2="40.65905" y2="2.69875" width="0.254" layer="16"/>
-<wire x1="43.02125" y1="2.69875" x2="44.45" y2="1.27" width="0.254" layer="16"/>
-<wire x1="40.65905" y1="2.69875" x2="43.02125" y2="2.69875" width="0.254" layer="16"/>
+<wire x1="43.03968125" y1="2.68031875" x2="43.03434375" y2="2.69875" width="0.254" layer="16"/>
+<wire x1="43.03968125" y1="2.68031875" x2="44.45" y2="1.27" width="0.254" layer="16"/>
+<wire x1="40.65905" y1="2.69875" x2="43.03434375" y2="2.69875" width="0.254" layer="16"/>
 <contactref element="X1" pad="18"/>
 </signal>
 <signal name="SUB_SQR_2">
@@ -3568,8 +3569,8 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="43.4975" y1="3.65125" x2="44.45" y2="3.65125" width="0.254" layer="1"/>
 <wire x1="44.45" y1="3.65125" x2="44.45" y2="3.6703" width="0.254" layer="1"/>
 <via x="44.45" y="3.6703" extent="1-16" drill="0.3302"/>
-<wire x1="46.99" y1="1.27" x2="46.8503" y2="1.27" width="0.254" layer="16"/>
-<wire x1="46.8503" y1="1.27" x2="44.45" y2="3.6703" width="0.254" layer="16"/>
+<wire x1="46.99" y1="1.27" x2="46.961484375" y2="1.158815625" width="0.254" layer="16"/>
+<wire x1="46.961484375" y1="1.158815625" x2="44.45" y2="3.6703" width="0.254" layer="16"/>
 <contactref element="X1" pad="19"/>
 </signal>
 <signal name="N$19">
@@ -3685,9 +3686,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="30.7975" y1="7.14375" x2="30.7975" y2="4.28625" width="0.254" layer="1"/>
 <wire x1="30.7975" y1="13.35405" x2="30.7975" y2="13.755" width="0.254" layer="1"/>
 <via x="30.7975" y="4.28625" extent="1-16" drill="0.3302"/>
-<wire x1="30.7975" y1="2.2225" x2="31.75" y2="1.27" width="0.254" layer="16"/>
-<wire x1="30.7975" y1="4.28625" x2="30.7975" y2="2.2225" width="0.254" layer="16"/>
 <contactref element="X1" pad="13"/>
+<wire x1="31.75" y1="1.27" x2="30.7975" y2="2.2225" width="0.254" layer="16"/>
+<wire x1="30.7975" y1="2.2225" x2="30.7975" y2="4.28625" width="0.254" layer="16"/>
 </signal>
 <signal name="-5V">
 <contactref element="25" pad="1"/>
@@ -3706,7 +3707,6 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="23.97125" y1="7.77875" x2="23.97125" y2="9.8425" width="0.254" layer="1"/>
 <wire x1="47.78375" y1="3.65125" x2="47.78375" y2="4.5475" width="0.254" layer="1"/>
 <wire x1="47.78375" y1="3.65125" x2="46.83125" y2="2.69875" width="0.254" layer="1"/>
-<wire x1="26.67" y1="2.69875" x2="46.83125" y2="2.69875" width="0.254" layer="1"/>
 <wire x1="37.62375" y1="17.2475" x2="37.62375" y2="13.6525" width="0.254" layer="1"/>
 <wire x1="36.83" y1="12.85875" x2="34.29" y2="12.85875" width="0.254" layer="1"/>
 <via x="34.29" y="12.85875" extent="1-16" drill="0.3302"/>
@@ -3716,10 +3716,11 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="25.4" y1="12.85875" x2="25.24125" y2="13.0175" width="0.254" layer="1"/>
 <wire x1="37.62375" y1="13.6525" x2="36.83" y2="12.85875" width="0.254" layer="1"/>
 <wire x1="23.97125" y1="7.77875" x2="24.92375" y2="6.82625" width="0.254" layer="1"/>
-<wire x1="24.92375" y1="4.445" x2="26.67" y2="2.69875" width="0.254" layer="1"/>
-<wire x1="24.92375" y1="6.82625" x2="24.92375" y2="4.445" width="0.254" layer="1"/>
-<wire x1="26.67" y1="2.69875" x2="26.67" y2="1.27" width="0.254" layer="1"/>
+<wire x1="24.92375" y1="4.445" x2="24.92375" y2="6.82625" width="0.254" layer="1"/>
 <contactref element="X1" pad="11"/>
+<wire x1="26.67" y1="1.27" x2="26.67" y2="2.69875" width="0.254" layer="1"/>
+<wire x1="46.83125" y1="2.69875" x2="26.67" y2="2.69875" width="0.254" layer="1"/>
+<wire x1="26.67" y1="2.69875" x2="24.92375" y2="4.445" width="0.254" layer="1"/>
 </signal>
 <signal name="SS2_TRIM_R">
 <contactref element="IC3" pad="7"/>
@@ -3732,8 +3733,8 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="36.98875" y1="6.82625" x2="36.98875" y2="3.81" width="0.254" layer="1"/>
 <wire x1="36.98875" y1="6.82625" x2="35.605" y2="8.21" width="0.254" layer="1"/>
 <via x="36.98875" y="3.81" extent="1-16" drill="0.3302"/>
-<wire x1="36.98875" y1="1.42875" x2="36.83" y2="1.27" width="0.254" layer="16"/>
-<wire x1="36.98875" y1="3.81" x2="36.98875" y2="1.42875" width="0.254" layer="16"/>
+<wire x1="36.98875" y1="1.310953125" x2="36.83" y2="1.27" width="0.254" layer="16"/>
+<wire x1="36.98875" y1="3.81" x2="36.98875" y2="1.310953125" width="0.254" layer="16"/>
 <contactref element="X1" pad="15"/>
 </signal>
 <signal name="N$21">
@@ -3787,8 +3788,8 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="26.035" y1="6.50875" x2="26.035" y2="4.28625" width="0.254" layer="1"/>
 <wire x1="26.035" y1="4.28625" x2="26.9875" y2="3.33375" width="0.254" layer="1"/>
 <via x="26.9875" y="3.33375" extent="1-16" drill="0.3302"/>
-<wire x1="29.21" y1="1.27" x2="29.05125" y2="1.27" width="0.254" layer="16"/>
-<wire x1="29.05125" y1="1.27" x2="26.9875" y2="3.33375" width="0.254" layer="16"/>
+<wire x1="29.21" y1="1.27" x2="29.1775875" y2="1.1436625" width="0.254" layer="16"/>
+<wire x1="29.1775875" y1="1.1436625" x2="26.9875" y2="3.33375" width="0.254" layer="16"/>
 <contactref element="X1" pad="12"/>
 </signal>
 <signal name="N$31">
@@ -3929,8 +3930,8 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <via x="16.35125" y="9.525" extent="1-16" drill="0.3302"/>
 <wire x1="16.35125" y1="9.525" x2="16.35125" y2="2.38125" width="0.254" layer="1"/>
 <wire x1="16.35125" y1="2.38125" x2="16.35125" y2="2.2225" width="0.254" layer="1"/>
-<wire x1="16.35125" y1="2.38125" x2="16.35125" y2="1.42875" width="0.254" layer="1"/>
-<wire x1="16.35125" y1="1.42875" x2="16.51" y2="1.27" width="0.254" layer="1"/>
+<wire x1="16.35125" y1="2.38125" x2="16.35125" y2="1.311190625" width="0.254" layer="1"/>
+<wire x1="16.35125" y1="1.311190625" x2="16.51" y2="1.27" width="0.254" layer="1"/>
 <contactref element="X1" pad="7"/>
 </signal>
 <signal name="N$39">
@@ -4058,8 +4059,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="54.2925" y1="3.65125" x2="53.49875" y2="2.8575" width="0.508" layer="16"/>
 <wire x1="52.7177" y1="11.7348" x2="52.7177" y2="9.1948" width="0.508" layer="16"/>
 <via x="53.49875" y="2.8575" extent="1-16" drill="0.3302"/>
-<wire x1="53.49875" y1="2.8575" x2="51.1175" y2="2.8575" width="0.508" layer="1"/>
-<wire x1="51.1175" y1="2.8575" x2="49.53" y2="1.27" width="0.508" layer="1"/>
+<wire x1="53.49875" y1="2.8575" x2="50.95875" y2="2.8575" width="0.508" layer="1"/>
+<wire x1="50.95875" y1="2.8575" x2="49.53" y2="1.42875" width="0.508" layer="1"/>
+<wire x1="49.53" y1="1.42875" x2="49.53" y2="1.27" width="0.508" layer="1"/>
 <contactref element="X1" pad="20"/>
 </signal>
 <signal name="SYMMETRY">
@@ -4097,10 +4099,10 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="38.89375" y1="4.28625" x2="38.89375" y2="4.3053" width="0.254" layer="1"/>
 <via x="38.89375" y="4.3053" extent="1-16" drill="0.3302"/>
 <wire x1="39.21125" y1="9.8425" x2="39.21125" y2="4.60375" width="0.254" layer="1"/>
-<wire x1="41.29405" y1="1.27" x2="41.91" y2="1.27" width="0.254" layer="16"/>
-<wire x1="41.29405" y1="1.27" x2="38.89375" y2="3.6703" width="0.254" layer="16"/>
 <wire x1="38.89375" y1="4.3053" x2="38.89375" y2="3.6703" width="0.254" layer="16"/>
 <contactref element="X1" pad="17"/>
+<wire x1="38.89375" y1="3.6703" x2="41.29405" y2="1.27" width="0.254" layer="16"/>
+<wire x1="41.29405" y1="1.27" x2="41.91" y2="1.27" width="0.254" layer="16"/>
 </signal>
 <signal name="-12V">
 <contactref element="IC1" pad="11"/>
@@ -4146,7 +4148,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="53.6575" y1="11.27125" x2="53.6575" y2="9.8425" width="0.508" layer="16"/>
 <wire x1="55.245" y1="8.255" x2="53.6575" y2="9.8425" width="0.508" layer="16"/>
 <wire x1="55.245" y1="8.255" x2="55.245" y2="1.905" width="0.508" layer="16"/>
-<wire x1="55.245" y1="1.905" x2="54.61" y2="1.27" width="0.508" layer="16"/>
+<wire x1="54.61" y1="1.27" x2="55.245" y2="1.905" width="0.508" layer="16"/>
 <wire x1="43.4975" y1="9.86625" x2="43.4825" y2="10.00125" width="0.254" layer="1"/>
 <wire x1="43.4825" y1="10.00125" x2="42.70375" y2="10.00125" width="0.254" layer="1"/>
 <wire x1="42.70375" y1="10.00125" x2="42.25" y2="9.5475" width="0.254" layer="1"/>
@@ -4161,8 +4163,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <via x="5.3975" y="10.16" extent="1-16" drill="0.3302"/>
 <wire x1="4.47773125" y1="5.99976875" x2="4.00148125" y2="6.47601875" width="0.254" layer="16"/>
 <via x="4.47773125" y="5.99976875" extent="1-16" drill="0.3302"/>
-<wire x1="4.47773125" y1="5.99976875" x2="4.47773125" y2="1.93773125" width="0.254" layer="1"/>
-<wire x1="4.47773125" y1="1.93773125" x2="3.81" y2="1.27" width="0.254" layer="1"/>
+<wire x1="4.47773125" y1="5.99976875" x2="4.47773125" y2="3.68398125" width="0.254" layer="1"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="3.01625" width="0.254" layer="1"/>
+<wire x1="4.47773125" y1="3.68398125" x2="3.81" y2="3.01625" width="0.254" layer="1"/>
 <wire x1="4.00148125" y1="6.47601875" x2="4.00148125" y2="8.76398125" width="0.254" layer="16"/>
 <wire x1="4.00148125" y1="8.76398125" x2="5.3975" y2="10.16" width="0.254" layer="16"/>
 <contactref element="X1" pad="2"/>
