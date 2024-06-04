@@ -3069,7 +3069,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <attribute name="NAME" x="45.466" y="19.78025" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="48.54575" y="17.2085" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="500R" x="48.73625" y="18.0975" smashed="yes" rot="R270">
+<element name="1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="510R" x="48.73625" y="18.0975" smashed="yes" rot="R270">
 <attribute name="NAME" x="48.5775" y="19.84375" size="0.8128" layer="25" font="vector"/>
 <attribute name="POPULARITY" value="70" x="48.73625" y="18.0975" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="48.73625" y="18.0975" size="1.778" layer="27" rot="R270" display="off"/>
