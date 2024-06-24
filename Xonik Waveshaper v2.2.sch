@@ -8310,7 +8310,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="C9" library="joakim" deviceset="C-EU-J" device="0402" value="1uF"/>
 <part name="C12" library="joakim" deviceset="C-EU-J" device="0402" value="1uF"/>
 <part name="C13" library="joakim" deviceset="C-EU-J" device="0402" value="1uF"/>
-<part name="IC6" library="joakim" deviceset="LM311" device="T"/>
+<part name="IC6" library="joakim" deviceset="LM311" device="D" value="LM311D"/>
 <part name="C14" library="joakim" deviceset="C-EU-J" device="0603" value="820pF"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="510R"/>
