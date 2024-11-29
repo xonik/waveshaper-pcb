@@ -8370,6 +8370,11 @@ here? Not sure.</text>
 <text x="101.6" y="-124.46" size="1.778" layer="97">-5 to 5V</text>
 <text x="101.6" y="-99.06" size="1.778" layer="97">-5 to 5V</text>
 <text x="101.6" y="-20.32" size="1.778" layer="97">-5 to 5V</text>
+<text x="-177.8" y="63.5" size="3.81" layer="91">TRIMMING
+--
+To trim the sub oscillators, turn the pw all the 
+way to one side so that it flatlines. The output 
+will now be the sub oscillators only </text>
 </plain>
 <instances>
 <instance part="IC1" gate="C" x="22.86" y="48.26" smashed="yes">
