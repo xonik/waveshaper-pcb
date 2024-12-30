@@ -14900,8 +14900,6 @@ Source: &lt;a href="http://focus.ti.com/lit/ds/symlink/ua78l05.pdf"&gt; Datashee
 <part name="C13" library="joakim" deviceset="C-EU-J" device="0402" value="1uF"/>
 <part name="C15" library="joakim" deviceset="C-EU-J" device="0402" value="1uF"/>
 <part name="C17" library="joakim" deviceset="C-EU-J" device="0402" value="1uF"/>
-<part name="C18" library="joakim" deviceset="C-EU-J" device="0402" value="1uF"/>
-<part name="C19" library="joakim" deviceset="C-EU-J" device="0402" value="1uF"/>
 <part name="34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
 <part name="36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -14915,7 +14913,6 @@ Source: &lt;a href="http://focus.ti.com/lit/ds/symlink/ua78l05.pdf"&gt; Datashee
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="IC7" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="78L*" device="F" package3d_urn="urn:adsk.eagle:package:16478/2" technology="05"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="C14" library="resistor" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C20" library="resistor" deviceset="C-EU" device="C0603" value="0.33uF"/>
 <part name="P+3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -15333,12 +15330,6 @@ to make the VCO frequency wobble.</text>
 <instance part="C17" gate="G$1" x="149.86" y="35.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="147.701" y="46.736" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="C18" gate="G$1" x="154.94" y="43.18" smashed="yes" rot="R180">
-<attribute name="NAME" x="152.781" y="54.356" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="C19" gate="G$1" x="154.94" y="35.56" smashed="yes" rot="R180">
-<attribute name="NAME" x="152.781" y="46.736" size="1.778" layer="95" rot="R270"/>
-</instance>
 <instance part="IC1" gate="A" x="78.74" y="86.36" smashed="yes">
 <attribute name="NAME" x="81.28" y="89.535" size="1.778" layer="95"/>
 <attribute name="VALUE" x="81.28" y="81.28" size="1.778" layer="96"/>
@@ -15400,10 +15391,6 @@ to make the VCO frequency wobble.</text>
 </instance>
 <instance part="SUPPLY5" gate="+5V" x="157.48" y="106.68" smashed="yes">
 <attribute name="VALUE" x="155.575" y="109.855" size="1.778" layer="96"/>
-</instance>
-<instance part="C14" gate="G$1" x="157.48" y="99.06" smashed="yes" rot="R180">
-<attribute name="NAME" x="163.576" y="98.679" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="166.116" y="103.759" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C20" gate="G$1" x="129.54" y="99.06" smashed="yes" rot="R180">
 <attribute name="NAME" x="128.016" y="98.679" size="1.778" layer="95" rot="R180"/>
@@ -15553,10 +15540,6 @@ to make the VCO frequency wobble.</text>
 <pinref part="C17" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="40.64" x2="149.86" y2="40.64" width="0.1524" layer="91"/>
 <junction x="149.86" y="40.64"/>
-<pinref part="C18" gate="G$1" pin="1"/>
-<pinref part="C19" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="40.64" x2="154.94" y2="40.64" width="0.1524" layer="91"/>
-<junction x="154.94" y="40.64"/>
 </segment>
 <segment>
 <pinref part="6" gate="G$1" pin="2"/>
@@ -15603,9 +15586,6 @@ to make the VCO frequency wobble.</text>
 <junction x="142.24" y="96.52"/>
 <pinref part="IC7" gate="G$1" pin="GND@1"/>
 <wire x1="144.78" y1="96.52" x2="142.24" y2="96.52" width="0.1524" layer="91"/>
-<junction x="144.78" y="96.52"/>
-<pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="157.48" y1="96.52" x2="144.78" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -16194,9 +16174,6 @@ to make the VCO frequency wobble.</text>
 <pinref part="SUPPLY10" gate="+12V" pin="+12V"/>
 <junction x="134.62" y="48.26"/>
 <pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="48.26" x2="154.94" y2="48.26" width="0.1524" layer="91"/>
-<junction x="149.86" y="48.26"/>
-<pinref part="C18" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="-147.32" y1="-106.68" x2="-96.52" y2="-106.68" width="0.1524" layer="91"/>
@@ -16264,9 +16241,6 @@ to make the VCO frequency wobble.</text>
 <wire x1="144.78" y1="33.02" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
 <junction x="144.78" y="33.02"/>
 <pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="33.02" x2="154.94" y2="33.02" width="0.1524" layer="91"/>
-<junction x="149.86" y="33.02"/>
-<pinref part="C19" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="-147.32" y1="-111.76" x2="-96.52" y2="-111.76" width="0.1524" layer="91"/>
@@ -16430,8 +16404,6 @@ to make the VCO frequency wobble.</text>
 <pinref part="IC7" gate="G$1" pin="VO"/>
 <pinref part="SUPPLY5" gate="+5V" pin="+5V"/>
 <wire x1="152.4" y1="104.14" x2="157.48" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C14" gate="G$1" pin="2"/>
-<junction x="157.48" y="104.14"/>
 </segment>
 </net>
 <net name="N$7" class="0">
