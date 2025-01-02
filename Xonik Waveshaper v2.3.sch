@@ -11585,6 +11585,8 @@ will now be the sub oscillators only </text>
 - Replaced LM311 with op amp comparator, as 
 the LM311 generated enough noise on the gnd
 to make the VCO frequency wobble.</text>
+<text x="-177.8" y="35.56" size="1.778" layer="91">Sub oscillator circuit
+tested on the 2nd of January 2025</text>
 </plain>
 <instances>
 <instance part="IC1" gate="C" x="22.86" y="48.26" smashed="yes">
