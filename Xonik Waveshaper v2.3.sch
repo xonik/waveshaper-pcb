@@ -11580,11 +11580,13 @@ ok with 1/10w resistors</text>
 To trim the sub oscillators, turn the pw all the 
 way to one side so that it flatlines. The output 
 will now be the sub oscillators only </text>
-<text x="-177.8" y="45.72" size="1.778" layer="97">v2.3:
+<text x="-177.8" y="43.18" size="1.778" layer="97">v2.3:
 - 1206 footprints for 100nF caps to be able to use C0G
 - Replaced LM311 with op amp comparator, as 
 the LM311 generated enough noise on the gnd
-to make the VCO frequency wobble.</text>
+to make the VCO frequency wobble.
+- Square wave had the wrong phase which gave
+mixing issues</text>
 <text x="-177.8" y="35.56" size="1.778" layer="91">Sub oscillator circuit
 tested on the 2nd of January 2025</text>
 </plain>
@@ -11968,16 +11970,16 @@ tested on the 2nd of January 2025</text>
 <attribute name="NAME" x="25.4" y="15.875" size="1.778" layer="95"/>
 <attribute name="VALUE" x="25.4" y="7.62" size="1.778" layer="96"/>
 </instance>
-<instance part="34" gate="G$1" x="0" y="73.66" smashed="yes" rot="R270">
-<attribute name="NAME" x="1.4986" y="77.47" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="-3.302" y="77.47" size="1.778" layer="96" rot="R270"/>
+<instance part="34" gate="G$1" x="-2.54" y="76.2" smashed="yes" rot="R270">
+<attribute name="NAME" x="-1.0414" y="80.01" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="-5.842" y="80.01" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="36" gate="G$1" x="-5.08" y="86.36" smashed="yes">
-<attribute name="NAME" x="-8.89" y="87.8586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-8.89" y="83.058" size="1.778" layer="96"/>
+<instance part="36" gate="G$1" x="-22.86" y="81.28" smashed="yes">
+<attribute name="NAME" x="-26.67" y="82.7786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-26.67" y="77.978" size="1.778" layer="96"/>
 </instance>
-<instance part="GND25" gate="1" x="0" y="66.04" smashed="yes">
-<attribute name="VALUE" x="-2.54" y="63.5" size="1.778" layer="96"/>
+<instance part="GND25" gate="1" x="-2.54" y="66.04" smashed="yes">
+<attribute name="VALUE" x="-5.08" y="63.5" size="1.778" layer="96"/>
 </instance>
 <instance part="X1" gate="G$1" x="-88.9" y="-81.28" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-87.63" y="-53.34" size="1.778" layer="96" rot="R180"/>
@@ -12176,6 +12178,7 @@ tested on the 2nd of January 2025</text>
 <segment>
 <pinref part="34" gate="G$1" pin="2"/>
 <pinref part="GND25" gate="1" pin="GND"/>
+<wire x1="-2.54" y1="71.12" x2="-2.54" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-147.32" y1="-109.22" x2="-96.52" y2="-109.22" width="0.1524" layer="91"/>
@@ -12350,10 +12353,10 @@ tested on the 2nd of January 2025</text>
 <pinref part="10" gate="G$1" pin="1"/>
 <wire x1="-45.72" y1="48.26" x2="-55.88" y2="48.26" width="0.1524" layer="91"/>
 <label x="-55.88" y="48.26" size="1.778" layer="95"/>
-<wire x1="-45.72" y1="48.26" x2="-45.72" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="48.26" x2="-45.72" y2="81.28" width="0.1524" layer="91"/>
 <junction x="-45.72" y="48.26"/>
 <pinref part="36" gate="G$1" pin="1"/>
-<wire x1="-45.72" y1="86.36" x2="-10.16" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="81.28" x2="-27.94" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-147.32" y1="-66.04" x2="-96.52" y2="-66.04" width="0.1524" layer="91"/>
@@ -12878,10 +12881,9 @@ tested on the 2nd of January 2025</text>
 </net>
 <net name="PW_CV" class="0">
 <segment>
-<wire x1="-27.94" y1="81.28" x2="-12.7" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="81.28" x2="2.54" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="D" pin="+IN"/>
-<label x="-27.94" y="81.28" size="1.778" layer="95"/>
+<wire x1="-27.94" y1="86.36" x2="2.54" y2="86.36" width="0.1524" layer="91"/>
+<label x="-27.94" y="86.36" size="1.778" layer="95"/>
+<pinref part="IC1" gate="D" pin="-IN"/>
 </segment>
 <segment>
 <wire x1="-147.32" y1="-60.96" x2="-96.52" y2="-60.96" width="0.1524" layer="91"/>
@@ -12979,12 +12981,12 @@ tested on the 2nd of January 2025</text>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="IC1" gate="D" pin="-IN"/>
-<wire x1="2.54" y1="86.36" x2="0" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="36" gate="G$1" pin="2"/>
-<junction x="0" y="86.36"/>
 <pinref part="34" gate="G$1" pin="1"/>
-<wire x1="0" y1="78.74" x2="0" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="81.28" x2="-17.78" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="D" pin="+IN"/>
+<wire x1="-2.54" y1="81.28" x2="2.54" y2="81.28" width="0.1524" layer="91"/>
+<junction x="-2.54" y="81.28"/>
 </segment>
 </net>
 <net name="N$9" class="0">

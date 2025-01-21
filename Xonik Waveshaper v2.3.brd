@@ -4156,18 +4156,18 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <wire x1="48.5775" y1="11.1125" x2="48.73625" y2="11.27125" width="0.254" layer="1"/>
 </signal>
 <signal name="PW_CV">
-<contactref element="IC1" pad="12"/>
-<wire x1="5.7" y1="14.5725" x2="5.7" y2="10.4625" width="0.254" layer="1"/>
-<wire x1="5.7" y1="10.4625" x2="5.3975" y2="10.16" width="0.254" layer="1"/>
-<via x="5.3975" y="10.16" extent="1-16" drill="0.3302"/>
+<wire x1="5.05" y1="11.1125" x2="5.08" y2="11.1125" width="0.254" layer="1"/>
+<via x="5.08" y="11.1125" extent="1-16" drill="0.3302"/>
 <wire x1="4.47773125" y1="5.99976875" x2="4.00148125" y2="6.47601875" width="0.254" layer="16"/>
 <via x="4.47773125" y="5.99976875" extent="1-16" drill="0.3302"/>
 <wire x1="4.47773125" y1="5.99976875" x2="4.47773125" y2="3.68398125" width="0.254" layer="1"/>
 <wire x1="3.81" y1="1.27" x2="3.81" y2="3.01625" width="0.254" layer="1"/>
 <wire x1="4.47773125" y1="3.68398125" x2="3.81" y2="3.01625" width="0.254" layer="1"/>
-<wire x1="4.00148125" y1="6.47601875" x2="4.00148125" y2="8.76398125" width="0.254" layer="16"/>
-<wire x1="4.00148125" y1="8.76398125" x2="5.3975" y2="10.16" width="0.254" layer="16"/>
+<wire x1="4.00148125" y1="6.47601875" x2="4.00148125" y2="10.03398125" width="0.254" layer="16"/>
+<wire x1="4.00148125" y1="10.03398125" x2="5.08" y2="11.1125" width="0.254" layer="16"/>
 <contactref element="X1" pad="2"/>
+<contactref element="IC1" pad="13"/>
+<wire x1="5.05" y1="14.5725" x2="5.05" y2="11.1125" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="9" pad="1"/>
@@ -4273,15 +4273,10 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <wire x1="42.956875" y1="10.5052" x2="43.0609375" y2="10.6092625" width="0.254" layer="1"/>
 </signal>
 <signal name="N$8">
-<contactref element="IC1" pad="13"/>
 <contactref element="34" pad="1"/>
 <contactref element="36" pad="2"/>
-<wire x1="5.05" y1="14.5725" x2="5.05" y2="15.5275" width="0.254" layer="1"/>
-<wire x1="5.05" y1="15.5275" x2="5.55625" y2="16.03375" width="0.254" layer="1"/>
-<wire x1="5.55625" y1="16.03375" x2="5.715" y2="16.1925" width="0.254" layer="1"/>
-<wire x1="5.715" y1="16.1925" x2="5.715" y2="17.78" width="0.254" layer="1"/>
-<wire x1="5.715" y1="17.78" x2="5.715" y2="17.93875" width="0.254" layer="1"/>
-<wire x1="5.715" y1="17.93875" x2="6.0325" y2="18.25625" width="0.254" layer="1"/>
+<wire x1="5.55625" y1="15.39875" x2="5.55625" y2="17.78" width="0.254" layer="1"/>
+<wire x1="5.55625" y1="17.78" x2="6.0325" y2="18.25625" width="0.254" layer="1"/>
 <wire x1="6.0325" y1="18.25625" x2="6.35" y2="18.25625" width="0.254" layer="1"/>
 <wire x1="6.35" y1="18.25625" x2="6.82625" y2="18.25625" width="0.254" layer="1"/>
 <wire x1="6.82625" y1="18.25625" x2="6.985" y2="18.415" width="0.254" layer="1"/>
@@ -4291,6 +4286,10 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <wire x1="7.62" y1="20.47875" x2="7.62" y2="19.8675" width="0.254" layer="1"/>
 <wire x1="6.985" y1="18.415" x2="6.985" y2="20.46925" width="0.254" layer="1"/>
 <wire x1="6.35" y1="18.8675" x2="6.35" y2="18.25625" width="0.254" layer="1"/>
+<contactref element="IC1" pad="12"/>
+<wire x1="5.55625" y1="15.39875" x2="5.715" y2="15.24" width="0.254" layer="1"/>
+<wire x1="5.715" y1="15.24" x2="5.715" y2="14.5875" width="0.254" layer="1"/>
+<wire x1="5.715" y1="14.5875" x2="5.7" y2="14.5725" width="0.254" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="1" pad="2"/>
