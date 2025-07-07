@@ -10,17 +10,17 @@
 <grid distance="6.25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -38,9 +38,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -50,7 +50,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -2593,19 +2593,19 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="jlcpcb-2layers *">
-<description language="en">&lt;b&gt;JLCPCB design rules (2 layers)&lt;/b&gt;
+<designrules name="jlcpcb-4layers">
+<description language="en">&lt;b&gt;JLCPCB design rules (4 layers)&lt;/b&gt;
 &lt;ul&gt;
 &lt;li&gt;Board thickness: 1.6mm&lt;/li&gt;
-&lt;li&gt;Copper weight: 1oz (35um)&lt;/li&gt;
+&lt;li&gt;Copper weight: outer layers: 1oz (35um), inner layers: 0.5oz (16.5um)&lt;/li&gt;
 &lt;li&gt;Note: annular ring aren't minimal&lt;/li&gt;
 &lt;/ul&gt;</description>
-<param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.6mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="5mil"/>
+<param name="layerSetup" value="(1+2*15+16)"/>
+<param name="mtCopper" value="0.035mm 0.0175mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0175mm 0.035mm"/>
+<param name="mtIsolate" value="0.2mm 1.065mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="3.5mil"/>
 <param name="mdWirePad" value="5mil"/>
-<param name="mdWireVia" value="5mil"/>
+<param name="mdWireVia" value="0.2mm"/>
 <param name="mdPadPad" value="5mil"/>
 <param name="mdPadVia" value="5mil"/>
 <param name="mdViaVia" value="5mil"/>
@@ -2617,9 +2617,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <param name="mdCopperDimension" value="0.2mm"/>
 <param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="5mil"/>
-<param name="msDrill" value="0.3mm"/>
-<param name="msMicroVia" value="0.3mm"/>
+<param name="msWidth" value="3.5mil"/>
+<param name="msDrill" value="0.2mm"/>
+<param name="msMicroVia" value="0.2mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.4"/>
 <param name="rvPadInner" value="0"/>
@@ -2634,7 +2634,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <param name="rlMaxPadInner" value="20mil"/>
 <param name="rlMinPadBottom" value="10mil"/>
 <param name="rlMaxPadBottom" value="80mil"/>
-<param name="rlMinViaOuter" value="4mil"/>
+<param name="rlMinViaOuter" value="0.13mm"/>
 <param name="rlMaxViaOuter" value="20mil"/>
 <param name="rlMinViaInner" value="8mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
@@ -2649,11 +2649,11 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinStopFrame" value="0.05mm"/>
+<param name="mlMaxStopFrame" value="0.05mm"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="16mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -3345,41 +3345,7 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <wire x1="48.180625" y1="19.110125" x2="48.26" y2="19.03075" width="0.508" layer="1"/>
 <wire x1="48.26" y1="19.03075" x2="48.26" y2="16.36375" width="0.508" layer="1"/>
 <contactref element="C14" pad="1"/>
-<wire x1="54.2925" y1="15.5575" x2="53.98135" y2="18.51025" width="0" layer="19" extent="1-1"/>
-<wire x1="53.0225" y1="15.5575" x2="54.2925" y2="15.5575" width="0" layer="19" extent="1-1"/>
-<wire x1="51.1175" y1="16.85125" x2="53.0225" y2="15.5575" width="0" layer="19" extent="1-1"/>
-<wire x1="48.180625" y1="16.443125" x2="51.1175" y2="16.85125" width="0" layer="19" extent="1-1"/>
-<wire x1="44.7675" y1="18.9475" x2="48.180625" y2="19.110125" width="0" layer="19" extent="1-1"/>
-<wire x1="44.1325" y1="15.875" x2="44.7675" y2="18.9475" width="0" layer="19" extent="1-1"/>
-<wire x1="42.956875" y1="14.5725" x2="43.3625" y2="15.71625" width="0" layer="19" extent="1-1"/>
-<wire x1="41.656875" y1="14.5725" x2="42.956875" y2="14.5725" width="0" layer="19" extent="1-1"/>
-<wire x1="43.4975" y1="9.8425" x2="43.02125" y2="13.49375" width="0" layer="19" extent="1-1"/>
-<wire x1="43.3625" y1="7.9375" x2="43.606875" y2="8.9225" width="0" layer="19" extent="1-1"/>
-<wire x1="41.5925" y1="7.9375" x2="43.3625" y2="7.9375" width="0" layer="19" extent="1-1"/>
-<wire x1="54.3375" y1="8.9225" x2="54.3375" y2="14.5725" width="0" layer="19" extent="1-1"/>
-<wire x1="53.736875" y1="4.92125" x2="53.0225" y2="7.9375" width="0" layer="19" extent="1-1"/>
-<wire x1="52.07" y1="1.27" x2="54.47665" y2="3.4641" width="0" layer="19" extent="1-1"/>
-<wire x1="34.3296875" y1="13.6525" x2="41.5925" y2="13.49375" width="0" layer="19" extent="1-1"/>
-<wire x1="33.005" y1="14.5725" x2="34.305" y2="14.5725" width="0" layer="19" extent="1-1"/>
-<wire x1="33.655" y1="17.16875" x2="34.305" y2="14.5725" width="0" layer="19" extent="1-1"/>
-<wire x1="34.3296875" y1="9.8425" x2="34.3296875" y2="13.6525" width="0" layer="19" extent="1-1"/>
-<wire x1="33.005" y1="8.9225" x2="34.305" y2="8.9225" width="0" layer="19" extent="1-1"/>
-<wire x1="33.655" y1="6.32625" x2="34.305" y2="8.9225" width="0" layer="19" extent="1-1"/>
-<wire x1="27.46375" y1="18.9475" x2="33.655" y2="18.0975" width="0" layer="19" extent="1-1"/>
-<wire x1="19.20875" y1="18.0975" x2="23.01875" y2="19.0975" width="0" layer="19" extent="1-1"/>
-<wire x1="18.55875" y1="14.5725" x2="19.20875" y2="17.16875" width="0" layer="19" extent="1-1"/>
-<wire x1="21.9075" y1="14.44625" x2="18.55875" y2="14.5725" width="0" layer="19" extent="1-1"/>
-<wire x1="18.5340625" y1="10.00125" x2="18.5340625" y2="13.6525" width="0" layer="19" extent="1-1"/>
-<wire x1="19.85875" y1="8.9225" x2="18.55875" y2="8.9225" width="0" layer="19" extent="1-1"/>
-<wire x1="19.20875" y1="6.32625" x2="18.55875" y2="8.9225" width="0" layer="19" extent="1-1"/>
-<wire x1="8.09625" y1="7.14375" x2="18.55875" y2="8.9225" width="0" layer="19" extent="1-1"/>
-<wire x1="7.2898" y1="7.62" x2="8.09625" y2="7.14375" width="0" layer="19" extent="1-1"/>
-<wire x1="6.35" y1="6.32625" x2="7.2898" y2="7.62" width="0" layer="19" extent="1-1"/>
-<wire x1="7.0246875" y1="13.6525" x2="7" y2="8.9225" width="0" layer="19" extent="1-1"/>
-<wire x1="6.35" y1="16.85125" x2="7" y2="14.5725" width="0" layer="19" extent="1-1"/>
-<wire x1="6.35" y1="19.8675" x2="6.35" y2="17.62125" width="0" layer="19" extent="1-1"/>
-<wire x1="0.955" y1="18.245" x2="5.715" y2="20.47875" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.96125" y1="-8.89" x2="6.35" y2="5.3975" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="5.3975" x2="-1.96125" y2="-8.89" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="IC1" pad="14"/>
