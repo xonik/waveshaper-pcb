@@ -11538,8 +11538,6 @@ Source: &lt;a href="http://focus.ti.com/lit/ds/symlink/ua78l05.pdf"&gt; Datashee
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC8" library="joakim" deviceset="TL074J" device="T"/>
 <part name="37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="220k"/>
-<part name="C14" library="joakim" deviceset="C-EU-J" device="0603" value="100pF-DNM"/>
-<part name="GND27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11599,6 +11597,16 @@ reduces noise on the ground plane.
 noise introduced by changing resistor</text>
 <text x="-177.8" y="35.56" size="1.778" layer="91">Sub oscillator circuit
 tested on the 2nd of January 2025</text>
+<wire x1="30.48" y1="83.82" x2="30.48" y2="78.74" width="0.1524" layer="97"/>
+<wire x1="30.48" y1="78.74" x2="33.02" y2="78.74" width="0.1524" layer="97"/>
+<wire x1="30.48" y1="78.74" x2="27.94" y2="78.74" width="0.1524" layer="97"/>
+<wire x1="27.94" y1="77.47" x2="30.48" y2="77.47" width="0.1524" layer="97"/>
+<wire x1="33.02" y1="77.47" x2="30.48" y2="77.47" width="0.1524" layer="97"/>
+<wire x1="30.48" y1="77.47" x2="30.48" y2="73.66" width="0.1524" layer="97"/>
+<wire x1="30.48" y1="73.66" x2="33.02" y2="73.66" width="0.1524" layer="97"/>
+<wire x1="30.48" y1="73.66" x2="27.94" y2="73.66" width="0.1524" layer="97"/>
+<text x="17.78" y="73.66" size="1.778" layer="97">Possible:
+100pF</text>
 </plain>
 <instances>
 <instance part="IC1" gate="C" x="22.86" y="48.26" smashed="yes">
@@ -12057,13 +12065,6 @@ tested on the 2nd of January 2025</text>
 <attribute name="NAME" x="44.45" y="102.6414" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="44.45" y="107.442" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C14" gate="G$1" x="30.48" y="78.74" smashed="yes" rot="R180">
-<attribute name="NAME" x="24.384" y="76.581" size="1.778" layer="95"/>
-<attribute name="VALUE" x="14.224" y="74.041" size="1.778" layer="96"/>
-</instance>
-<instance part="GND27" gate="1" x="30.48" y="73.66" smashed="yes">
-<attribute name="VALUE" x="27.94" y="71.12" size="1.778" layer="96"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -12234,10 +12235,6 @@ tested on the 2nd of January 2025</text>
 <wire x1="144.78" y1="96.52" x2="142.24" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 </segment>
-<segment>
-<pinref part="C14" gate="G$1" pin="1"/>
-<pinref part="GND27" gate="1" pin="GND"/>
-</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -12249,10 +12246,7 @@ tested on the 2nd of January 2025</text>
 <segment>
 <pinref part="3" gate="G$1" pin="1"/>
 <pinref part="T1" gate="G$1" pin="B"/>
-<wire x1="27.94" y1="83.82" x2="30.48" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="83.82" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
-<junction x="30.48" y="83.82"/>
+<wire x1="27.94" y1="83.82" x2="33.02" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
